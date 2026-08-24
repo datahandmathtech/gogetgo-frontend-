@@ -20,7 +20,7 @@ export default function Navbar() {
   if (isMultiDayPage) phoneLink = "tel:+916367466426";
   else if (isCorporatePage) phoneLink = "tel:+919359975658";
   else if (isLiveUdaipurPage) phoneLink = "tel:+919257109729";
-  else if (isBookingPage) phoneLink = "tel:+919257109725";
+  else if (isBookingPage) phoneLink = "tel:+917627013579";
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);

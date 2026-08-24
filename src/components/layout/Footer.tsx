@@ -56,8 +56,8 @@ export default function Footer() {
     phoneDisplay = "+91 92571 09729";
     phoneLink = "tel:+919257109729";
   } else if (isBookingPage) {
-    phoneDisplay = "+91 92571 09725";
-    phoneLink = "tel:+919257109725";
+    phoneDisplay = "+91 76270 13579";
+    phoneLink = "tel:+917627013579";
   }
 
   const currentYear = new Date().getFullYear();

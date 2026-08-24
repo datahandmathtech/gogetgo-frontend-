@@ -31,9 +31,9 @@ export default function ChatWidget() {
     phoneLink = "tel:+919257109729";
     waLinkText = "919257109729";
   } else if (isBookingPage) {
-    phoneDisplay = "+91 92571 09725";
-    phoneLink = "tel:+919257109725";
-    waLinkText = "919257109725";
+    phoneDisplay = "+91 76270 13579";
+    phoneLink = "tel:+917627013579";
+    waLinkText = "917627013579";
   }
 
   return (
