@@ -27,9 +27,9 @@ export default function ChatWidget() {
     phoneLink = "tel:+919359975658";
     waLinkText = "919359975658";
   } else if (isLiveUdaipurPage) {
-    phoneDisplay = "+91 92571 09729";
-    phoneLink = "tel:+919257109729";
-    waLinkText = "919257109729";
+    phoneDisplay = "+91 80005 05810";
+    phoneLink = "tel:+918000505810";
+    waLinkText = "918000505810";
   } else if (isBookingPage) {
     phoneDisplay = "+91 76270 13579";
     phoneLink = "tel:+917627013579";

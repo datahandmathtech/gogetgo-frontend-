@@ -19,7 +19,7 @@ export default function Navbar() {
   let phoneLink = "tel:+917627013579";
   if (isMultiDayPage) phoneLink = "tel:+916367466426";
   else if (isCorporatePage) phoneLink = "tel:+919359975658";
-  else if (isLiveUdaipurPage) phoneLink = "tel:+919257109729";
+  else if (isLiveUdaipurPage) phoneLink = "tel:+918000505810";
   else if (isBookingPage) phoneLink = "tel:+917627013579";
 
   useEffect(() => {
