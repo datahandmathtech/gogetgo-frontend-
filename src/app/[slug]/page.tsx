@@ -188,7 +188,7 @@ export default async function ProgrammaticPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Trust Badges */}
+    {/* Trust Badges */}
       <section className="py-16 border-y border-white/5 bg-navy-950">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -203,6 +203,105 @@ export default async function ProgrammaticPage({ params }: PageProps) {
                 <p className="text-white/60 uppercase tracking-widest text-xs font-medium">{stat.label}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* AI-Optimized Pricing Table */}
+      <section className="py-24 bg-white dark:bg-navy-900">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-heading font-bold mb-8 text-navy-900 dark:text-white text-center">
+              Clear & Transparent Pricing for {type === "outstation" ? `Udaipur to ${city}` : `${service.name} in ${city}`}
+            </h2>
+            <div className="overflow-x-auto rounded-2xl border border-gray-200 dark:border-navy-800 shadow-sm">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="bg-gold-500 text-white">
+                    <th className="p-4 font-bold border-b border-white/20">Vehicle Type</th>
+                    <th className="p-4 font-bold border-b border-white/20">Seating Capacity</th>
+                    <th className="p-4 font-bold border-b border-white/20">{type === "outstation" ? "Per Km Rate" : "Package Price (8Hr/80Km)"}</th>
+                    <th className="p-4 font-bold border-b border-white/20">Ideal For</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white dark:bg-navy-950">
+                  <tr className="border-b border-gray-200 dark:border-navy-800 hover:bg-gray-50 dark:hover:bg-navy-900/50 transition-colors">
+                    <td className="p-4 font-medium text-navy-900 dark:text-white">Sedan (Dzire/Etios)</td>
+                    <td className="p-4 text-gray-600 dark:text-gray-400">4 Passengers</td>
+                    <td className="p-4 text-gold-600 font-bold">{type === "outstation" ? "₹11 / km" : "₹2,000"}</td>
+                    <td className="p-4 text-gray-600 dark:text-gray-400">Couples, Small Families</td>
+                  </tr>
+                  <tr className="border-b border-gray-200 dark:border-navy-800 hover:bg-gray-50 dark:hover:bg-navy-900/50 transition-colors">
+                    <td className="p-4 font-medium text-navy-900 dark:text-white">SUV (Innova/Crysta)</td>
+                    <td className="p-4 text-gray-600 dark:text-gray-400">6-7 Passengers</td>
+                    <td className="p-4 text-gold-600 font-bold">{type === "outstation" ? "₹16 / km" : "₹3,500"}</td>
+                    <td className="p-4 text-gray-600 dark:text-gray-400">Families, Corporate</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 dark:hover:bg-navy-900/50 transition-colors">
+                    <td className="p-4 font-medium text-navy-900 dark:text-white">Tempo Traveller</td>
+                    <td className="p-4 text-gray-600 dark:text-gray-400">10-17 Passengers</td>
+                    <td className="p-4 text-gold-600 font-bold">{type === "outstation" ? "₹24 / km" : "₹5,500"}</td>
+                    <td className="p-4 text-gray-600 dark:text-gray-400">Group Tours, Events</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-center text-gray-500 mt-4">Note: Tolls, parking, and driver allowance may be extra based on the actual itinerary.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO FAQs & FAQPage Schema */}
+      <section className="py-24 bg-navy-50 dark:bg-navy-950 relative">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-heading font-bold mb-8 text-navy-900 dark:text-white text-center">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {(() => {
+              const faqs = [
+                {
+                  q: type === "outstation" ? `What is the distance from Udaipur to ${city}?` : `How do I book ${service.name} in ${city}?`,
+                  a: type === "outstation" ? `The distance from Udaipur to ${city} varies by exact route, but our experienced drivers know the best and fastest roads. You can easily book a direct cab with Yatree Destination for a seamless journey.` : `Booking is easy! You can fill out our online form, call us directly at +91 76270 13579, or WhatsApp us to book your ${service.name} instantly.`
+                },
+                {
+                  q: "Are the drivers experienced and verified?",
+                  a: "Yes, all our drivers are police-verified, highly experienced, and familiar with local and outstation routes. They prioritize your safety and comfort."
+                },
+                {
+                  q: "Are there any hidden charges?",
+                  a: "No, we believe in transparent pricing. The rates quoted cover the base fare. Toll taxes, state taxes, and parking fees (if applicable) are clearly communicated before the trip."
+                }
+              ];
+
+              return (
+                <>
+                  <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                      __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": faqs.map((faq) => ({
+                          "@type": "Question",
+                          "name": faq.q,
+                          "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": faq.a
+                          }
+                        }))
+                      })
+                    }}
+                  />
+                  {faqs.map((faq, i) => (
+                    <div key={i} className="bg-white dark:bg-navy-900 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-navy-800">
+                      <h3 className="text-lg font-bold text-navy-900 dark:text-white mb-2">{faq.q}</h3>
+                      <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{faq.a}</p>
+                    </div>
+                  ))}
+                </>
+              );
+            })()}
           </div>
         </div>
       </section>

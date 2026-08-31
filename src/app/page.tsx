@@ -4,7 +4,13 @@ import Hero from "@/components/sections/PremiumHero";
 import DetailedAbout from "@/components/sections/DetailedAbout";
 import { Reveal } from "@/components/ui/Reveal";
 
+import { constructMetadata } from "@/lib/seo";
 import { Phone, MessageCircle } from "lucide-react";
+
+export const metadata = constructMetadata({
+  title: "Best Taxi Service in Udaipur | Luxury Car Rental - Yatree Destination",
+});
+
 
 // Dynamic imports for below-the-fold components to improve initial load speed
 const WhyChooseUs = dynamic(() => import("@/components/sections/WhyChooseUs"), { ssr: true });
