@@ -63,7 +63,7 @@ export default function InquiriesPage() {
     <AdminLayout>
       <div className="space-y-8">
         <div>
-          <h1 className="text-3xl font-heading font-bold text-white mb-2">Inquiry Management</h1>
+          <h1 className="text-3xl font-heading font-bold text-white mb-2 font-serif">Inquiry Management</h1>
           <p className="text-white/60">Respond to customer questions, callback requests, and feedback.</p>
         </div>
 

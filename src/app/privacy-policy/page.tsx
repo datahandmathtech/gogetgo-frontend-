@@ -2,15 +2,15 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Yatree Destination",
-  description: "Privacy Policy for Yatree Destination - Udaipur's premium taxi service.",
+  title: "Privacy Policy | GoGetGo Taxi",
+  description: "Privacy Policy for GoGetGo Taxi - Udaipur's premium taxi service.",
 };
 
 export default function PrivacyPolicyPage() {
   return (
     <div className="bg-white min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-6 max-w-4xl">
-        <h1 className="text-4xl font-black uppercase tracking-tighter text-navy-950 mb-8">
+        <h1 className="text-4xl font-black uppercase tracking-tighter text-navy-950 mb-8 font-serif">
           Privacy <span className="text-gold-premium">Policy</span>
         </h1>
 
@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-2xl font-bold text-navy-950 mb-4">1. Information We Collect</h2>
             <p>
-              At Yatree Destination, we collect information to provide better services to our users. This includes:
+              At GoGetGo Taxi, we collect information to provide better services to our users. This includes:
             </p>
             <ul className="list-disc pl-6 mt-4 space-y-2">
               <li>Personal details such as name, email address, and phone number when you make a booking.</li>
@@ -60,8 +60,8 @@ export default function PrivacyPolicyPage() {
               If you have any questions or concerns about our Privacy Policy, please contact us at:
             </p>
             <div className="mt-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
-              <p><strong>Email:</strong> Kavishjain@yatreedestination.com, info@yatreedestination.com</p>
-              <p><strong>Phone:</strong> +91 76270 13579</p>
+              <p><strong>Email:</strong> info@gogetgotaxi.com, info@gogetgotaxi.com</p>
+              <p><strong>Phone:</strong> +91 77377 37937</p>
               <p><strong>Address:</strong> 97, BEHIND VIKAS HOSPITAL, HIRAN MAGRI SEC 3, UDAIPUR, Udaipur, Rajasthan, 313001</p>
             </div>
           </section>
@@ -74,3 +74,4 @@ export default function PrivacyPolicyPage() {
     </div>
   );
 }
+

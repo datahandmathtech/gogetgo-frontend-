@@ -15,7 +15,7 @@ export default function EventTransportationPage() {
       {/* Page Header - Beautiful and Transparent */}
       <div className="bg-slate-900/40 backdrop-blur-md py-24 px-6 text-center border-b border-white/5">
          <span className="text-gold-premium font-bold uppercase tracking-[0.3em] text-xs mb-4 block">Scalable Logistics</span>
-         <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight mb-4">Event Transportation Udaipur</h1>
+         <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight mb-4 font-serif">Event Transportation Udaipur</h1>
          <p className="text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
            Moving hundreds of guests seamlessly. We are the preferred high-capacity travel partner for major festivals, royal weddings, corporate summits, and VIP handling in Udaipur.
          </p>
@@ -26,7 +26,7 @@ export default function EventTransportationPage() {
         <section className="py-20 max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
              <span className="text-gold-premium font-bold uppercase tracking-[0.2em] text-[10px]">Strategic Fleet Management</span>
-             <h2 className="text-3xl md:text-5xl font-black text-slate-900 dark:text-white uppercase mt-2 tracking-tight">Our Specialized Event Services</h2>
+             <h2 className="text-3xl md:text-5xl font-black text-slate-900 dark:text-white uppercase mt-2 tracking-tight font-serif">Our Specialized Event Services</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -76,9 +76,10 @@ export default function EventTransportationPage() {
       <Footer />
 
       <div className="fixed bottom-0 left-0 w-full z-[100] md:hidden flex border-t border-slate-200 bg-white">
-        <a href="tel:+917627013579" className="flex-1 bg-slate-900 text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase"><Phone className="w-4 h-4 text-orange-500" /> Call Now</a>
-        <a href="https://wa.me/917627013579" className="flex-1 bg-[#25D366] text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
+        <a href="tel:+917737737937" className="flex-1 bg-slate-900 text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase"><Phone className="w-4 h-4 text-orange-500" /> Call Now</a>
+        <a href="https://wa.me/917737737937" className="flex-1 bg-[#25D366] text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
       </div>
     </main>
   );
 }
+

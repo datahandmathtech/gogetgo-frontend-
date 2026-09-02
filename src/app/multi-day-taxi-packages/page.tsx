@@ -17,13 +17,13 @@ export default function MultiDayTaxiPackagesPage() {
   });
 
   const handleWhatsAppQuote = (packageName: string) => {
-    const message = `Hello Yatree Destination! I am interested in the ${packageName} package. Please provide more details and availability.`;
+    const message = `Hello GoGetGo Taxi! I am interested in the ${packageName} package. Please provide more details and availability.`;
     window.open(`https://wa.me/916367466426?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `Hello Yatree Destination! Here are my custom trip requirements:
+    const message = `Hello GoGetGo Taxi! Here are my custom trip requirements:
 Name: ${formData.name}
 City: ${formData.city}
 Mobile: ${formData.mobile}
@@ -47,8 +47,8 @@ Requirements: ${formData.requirements}`;
         {/* Right side image constrained to prevent excessive zoom, with a smooth CSS mask fade to blend into the dark background */}
         <div className="absolute right-0 top-0 bottom-0 w-full lg:w-[65%] z-0 [mask-image:linear-gradient(to_right,transparent,black_25%)] [-webkit-mask-image:linear-gradient(to_right,transparent,black_25%)]">
           <Image 
-            src="/yatree-branded-car-v2.jpg" 
-            alt="Yatree Destination Innova Crysta" 
+            src="/suv-driving-new.jpg" 
+            alt="GoGetGo Taxi Innova Crysta" 
             fill 
             priority
             className="object-cover object-right-bottom opacity-90"
@@ -69,7 +69,7 @@ Requirements: ${formData.requirements}`;
                  Private Multi-Day Taxi Packages
                </span>
                
-               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight mb-6 leading-[1.1]">
+               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight mb-6 leading-[1.1] font-serif">
                  Udaipur Multi-Day <br className="hidden lg:block"/> Taxi Packages <span className="text-orange-500">– 2 to 7 Days</span>
                </h1>
                
@@ -90,7 +90,7 @@ Requirements: ${formData.requirements}`;
                <div className="mb-8">
                  <p className="text-xs font-bold text-slate-300 uppercase tracking-widest mb-1 drop-shadow-md">Packages starting from</p>
                  <div className="flex items-baseline gap-2">
-                   <span className="text-4xl font-black text-white drop-shadow-lg">₹6,000</span>
+                   <span className="text-4xl font-black text-white drop-shadow-lg font-serif">₹6,000</span>
                    <span className="text-sm font-bold text-orange-500 drop-shadow-md">+ GST</span>
                  </div>
                </div>
@@ -147,8 +147,8 @@ Requirements: ${formData.requirements}`;
       {/* Value Prop */}
       <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-6 text-center max-w-4xl">
-          <h2 className="text-3xl font-black text-slate-900 mb-6 tracking-tight">ONE VEHICLE. ONE DRIVER. YOUR COMPLETE TRIP.</h2>
-          <p className="text-slate-600 text-lg mb-12 leading-relaxed">Avoid arranging a different taxi every day. Pre-book your complete Udaipur and Rajasthan transport with Yatree Destination before your journey begins.</p>
+          <h2 className="text-3xl font-black text-slate-900 mb-6 tracking-tight font-serif">ONE VEHICLE. ONE DRIVER. YOUR COMPLETE TRIP.</h2>
+          <p className="text-slate-600 text-lg mb-12 leading-relaxed">Avoid arranging a different taxi every day. Pre-book your complete Udaipur and Rajasthan transport with GoGetGo Taxi before your journey begins.</p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
             <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
@@ -174,7 +174,7 @@ Requirements: ${formData.requirements}`;
       <section className="py-24 bg-white border-t border-slate-200">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-black text-slate-900 mb-6">Our Premium Fleet</h2>
+            <h2 className="text-4xl font-black text-slate-900 mb-6 font-serif">Our Premium Fleet</h2>
             <p className="text-slate-500 max-w-2xl mx-auto text-lg">Well-maintained vehicles equipped for long multi-day journeys across Rajasthan.</p>
           </div>
           
@@ -211,7 +211,7 @@ Requirements: ${formData.requirements}`;
       <section className="py-24 bg-white" id="packages">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-black text-slate-900 mb-6">Choose Your Taxi Package</h2>
+            <h2 className="text-4xl font-black text-slate-900 mb-6 font-serif">Choose Your Taxi Package</h2>
             <p className="text-slate-500 max-w-2xl mx-auto text-lg">Popular private transport plans starting from Udaipur. All fares below are exclusive of GST.</p>
           </div>
 
@@ -319,7 +319,7 @@ Requirements: ${formData.requirements}`;
             {/* Trust Markers Left */}
             <div>
               <span className="text-orange-500 font-bold text-xs uppercase tracking-widest mb-4 block">CUSTOM ROUTE ITINERARY</span>
-              <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-8 leading-tight">Don't see your exact route?</h2>
+              <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-8 leading-tight font-serif">Don't see your exact route?</h2>
               <p className="text-lg text-slate-600 mb-12 leading-relaxed">
                 Every Rajasthan trip is different. Tell us how many days you are travelling, where you want to go and how many people are travelling. We will create a customized private transport package for you.
               </p>
@@ -403,7 +403,7 @@ Requirements: ${formData.requirements}`;
       {/* FAQ Section */}
       <section className="py-24 bg-slate-50 border-t border-slate-200">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-black text-center text-slate-900 mb-12">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-black text-center text-slate-900 mb-12 font-serif">Frequently Asked Questions</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {q: "Can I book a taxi for 3, 4 or 5 days in Udaipur?", a: "Yes, you can select any of our multi-day packages starting from 2 days up to 7+ days."},

@@ -2,15 +2,15 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Yatree Destination",
-  description: "Terms of Service for Yatree Destination - Udaipur's premium taxi service.",
+  title: "Terms of Service | GoGetGo Taxi",
+  description: "Terms of Service for GoGetGo Taxi - Udaipur's premium taxi service.",
 };
 
 export default function TermsOfServicePage() {
   return (
     <div className="bg-white min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-6 max-w-4xl">
-        <h1 className="text-4xl font-black uppercase tracking-tighter text-navy-950 mb-8">
+        <h1 className="text-4xl font-black uppercase tracking-tighter text-navy-950 mb-8 font-serif">
           Terms of <span className="text-gold-premium">Service</span>
         </h1>
 
@@ -18,7 +18,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-bold text-navy-950 mb-4">1. Acceptance of Terms</h2>
             <p>
-              By accessing and using the Yatree Destination website or booking our services, you accept and agree to be bound by the terms and provisions of this agreement.
+              By accessing and using the GoGetGo Taxi website or booking our services, you accept and agree to be bound by the terms and provisions of this agreement.
             </p>
           </section>
 
@@ -28,7 +28,7 @@ export default function TermsOfServicePage() {
               <li>All bookings are subject to availability of vehicles.</li>
               <li>A booking confirmation will be provided upon successful reservation.</li>
               <li>Cancellations made within 24 hours of the pickup time may be subject to a cancellation fee.</li>
-              <li>Yatree Destination reserves the right to cancel any booking due to unforeseen circumstances (e.g., severe weather, vehicle breakdown). In such cases, a full refund or alternative arrangement will be provided.</li>
+              <li>GoGetGo Taxi reserves the right to cancel any booking due to unforeseen circumstances (e.g., severe weather, vehicle breakdown). In such cases, a full refund or alternative arrangement will be provided.</li>
             </ul>
           </section>
 
@@ -53,7 +53,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-bold text-navy-950 mb-4">5. Limitation of Liability</h2>
             <p>
-              Yatree Destination shall not be liable for any indirect, incidental, special, or consequential damages resulting from the use or inability to use our services. We do not take responsibility for any loss of luggage or personal belongings during the journey.
+              GoGetGo Taxi shall not be liable for any indirect, incidental, special, or consequential damages resulting from the use or inability to use our services. We do not take responsibility for any loss of luggage or personal belongings during the journey.
             </p>
           </section>
 

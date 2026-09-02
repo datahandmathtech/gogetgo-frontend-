@@ -51,7 +51,7 @@ const services = [
   {
     title: "Corporate Car Rental Solutions",
     description: "Professional transportation services for corporate clients, business executives, and event organizers. Reliable monthly rental plans and executive airport transfers.",
-    longDescription: "Yatree Destination provides specialized Corporate Taxi Services in Udaipur for businesses that require high standards of professionalism. We offer monthly car rental contracts, executive airport transfers, and transport management for corporate events or conferences. Our chauffeurs are trained in professional etiquette and our fleet includes premium sedans and SUVs (like Fortuner and Innova) to maintain your brand's executive image.",
+    longDescription: "GoGetGo Taxi provides specialized Corporate Taxi Services in Udaipur for businesses that require high standards of professionalism. We offer monthly car rental contracts, executive airport transfers, and transport management for corporate events or conferences. Our chauffeurs are trained in professional etiquette and our fleet includes premium sedans and SUVs (like Fortuner and Innova) to maintain your brand's executive image.",
     icon: Building2,
     color: "bg-slate-700",
     keywords: ["Corporate Cab Udaipur", "Executive Car Hire", "Business Travel Rajasthan"]
@@ -83,11 +83,11 @@ export default function Services() {
                <ShieldCheck className="w-4 h-4" />
                Award-Winning Taxi Service in Udaipur
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-navy-900 mb-8 leading-[1.1]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-navy-900 mb-8 leading-[1.1] font-serif">
               Professional <span className="text-gold-premium">Travel Solutions</span> for Every Journey
             </h2>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
-              At Yatree Destination, we provide more than just a ride. We offer a comprehensive suite of premium 
+              At GoGetGo Taxi, we provide more than just a ride. We offer a comprehensive suite of premium 
               taxi and travel services designed to meet the unique needs of tourists, corporate executives, 
               and local residents in Udaipur and across Rajasthan. With a fleet of over 50+ well-maintained 
               vehicles and a team of 100+ professional chauffeurs, we are Udaipur's most trusted car rental company.
@@ -156,7 +156,7 @@ export default function Services() {
                 <button className="text-navy-900 font-bold flex items-center gap-2 group-hover:text-gold-premium transition-colors">
                   Explore Service <ArrowRight className="w-4 h-4" />
                 </button>
-                <div className="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center group-hover:bg-gold-premium group-hover:text-midnight transition-all">
+                <div className="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center group-hover:bg-gold-premium group-hover:text-white transition-all">
                    <ArrowRight className="w-5 h-5 -rotate-45" />
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function Services() {
            <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/10 -skew-x-12 translate-x-1/2" />
            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                 <h3 className="text-3xl font-bold mb-6">Why Yatree Destination is Udaipur's #1 Choice?</h3>
+                 <h3 className="text-3xl font-bold mb-6 font-serif">Why GoGetGo Taxi is Udaipur's #1 Choice?</h3>
                  <p className="text-slate-300 leading-relaxed mb-8">
                     Since our inception, we have served over 50,000+ satisfied domestic and international tourists. 
                     Our focus on safety, hygiene, and transparent pricing sets us apart in the competitive 
@@ -214,3 +214,4 @@ export default function Services() {
     </section>
   );
 }
+

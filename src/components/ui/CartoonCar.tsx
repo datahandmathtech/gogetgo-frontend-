@@ -58,9 +58,9 @@ export default function CartoonCar() {
           >
              {/* Aerodynamic Main Body */}
              <div className="absolute bottom-[10px] right-0 w-[160px] md:w-[200px] h-[24px] bg-gradient-to-r from-slate-800 to-slate-950 rounded-full rounded-tr-[30px] rounded-tl-[10px] shadow-2xl flex items-center justify-center overflow-hidden">
-                {/* Yatree Logo embedded on the car body */}
+                {/* GoGetGo Logo embedded on the car body */}
                 <div className="w-[40px] opacity-90 brightness-200 contrast-150">
-                  <img src="/logo-white.png" alt="Yatree" className="w-full h-auto object-contain" onError={(e) => e.currentTarget.src = "/logo.png"} />
+                  <img src="/logo-white.png" alt="GoGetGo" className="w-full h-auto object-contain" onError={(e) => e.currentTarget.src = "/logo.webp"} />
                 </div>
              </div>
              

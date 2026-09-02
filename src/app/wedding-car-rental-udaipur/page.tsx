@@ -32,17 +32,17 @@ export default function WeddingCarPage() {
         <div className="container mx-auto px-6 relative z-10 text-center">
            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
              <span className="text-gold-premium font-bold uppercase tracking-[0.3em] text-xs mb-6 block">Elegance in Every Mile</span>
-             <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-8 leading-[1.1]">
+             <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-8 leading-[1.1] font-serif">
                Wedding Car <br/> Rental Udaipur.
              </h1>
              <p className="text-xl text-slate-200 max-w-3xl mx-auto leading-relaxed mb-10 font-light">
                Arrive in breathtaking style on your big day. We specialize in luxury transportation for <strong>destination weddings in Udaipur</strong>, from royal vintage cars to premium guest convoys.
              </p>
              <div className="flex flex-wrap justify-center gap-4">
-                <a href="tel:+917627013579" className="bg-gold-premium text-midnight px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm flex items-center gap-3 hover:bg-white transition-colors shadow-lg shadow-gold-premium/20">
+                <a href="tel:+917737737937" className="bg-gold-premium text-midnight px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm flex items-center gap-3 hover:bg-white transition-colors shadow-lg shadow-gold-premium/20">
                   <Phone className="w-4 h-4" /> Get Wedding Quote
                 </a>
-                <a href="https://wa.me/917627013579" className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white/20 transition-colors flex items-center gap-2">
+                <a href="https://wa.me/917737737937" className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white/20 transition-colors flex items-center gap-2">
                   <MessageCircle className="w-4 h-4" /> WhatsApp Planner
                 </a>
              </div>
@@ -55,7 +55,7 @@ export default function WeddingCarPage() {
         <section className="py-24 max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <span className="text-gold-premium font-bold uppercase tracking-[0.3em] text-[10px]">Royal Wedding Fleet</span>
-            <h2 className="text-3xl md:text-5xl font-black text-slate-900 dark:text-white uppercase mt-2 tracking-tight">Select Your Wedding Carriage</h2>
+            <h2 className="text-3xl md:text-5xl font-black text-slate-900 dark:text-white uppercase mt-2 tracking-tight font-serif">Select Your Wedding Carriage</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -100,9 +100,9 @@ export default function WeddingCarPage() {
               
               <div className="lg:col-span-8">
                  <div className="prose prose-lg prose-slate max-w-none text-slate-600">
-                    <h2 className="text-3xl font-black text-slate-900 mb-6">Udaipur Destination Wedding Transportation Experts</h2>
+                    <h2 className="text-3xl font-black text-slate-900 mb-6 font-serif">Udaipur Destination Wedding Transportation Experts</h2>
                     <p className="leading-relaxed mb-6">
-                      Udaipur is globally recognized as the premier destination for royal weddings. Hosting a wedding at icons like <strong>Jagmandir Island Palace, The Leela Palace, or Zenana Mahal</strong> requires meticulous logistics. At Yatree Destination, we take the stress out of guest movement. We are the most trusted partner for <strong>wedding car rental in Udaipur</strong>, managing everything from airport transfers to baraat processions.
+                      Udaipur is globally recognized as the premier destination for royal weddings. Hosting a wedding at icons like <strong>Jagmandir Island Palace, The Leela Palace, or Zenana Mahal</strong> requires meticulous logistics. At GoGetGo Taxi, we take the stress out of guest movement. We are the most trusted partner for <strong>wedding car rental in Udaipur</strong>, managing everything from airport transfers to baraat processions.
                     </p>
 
                     <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Luxury Cars for the Couple: Vintage & Modern Classics</h3>
@@ -129,7 +129,7 @@ export default function WeddingCarPage() {
                       Managing 200+ guests across multiple venues can be a nightmare. Our <strong>wedding guest transportation Udaipur</strong> service simplifies this. We provide a fleet of luxury <strong>Tempo Travellers (12, 17, 26 seaters)</strong> and 45-seater coaches to ensure your guests travel together and arrive on time for every function, from the Mehndi to the Sangeet.
                     </p>
 
-                    <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Why Planners Trust Yatree Destination</h3>
+                    <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Why Planners Trust GoGetGo Taxi</h3>
                     <p className="mb-6">
                       We have worked with the top <strong>destination wedding planners in Udaipur</strong>. They value our "Buffer Policy" where we always keep standby vehicles ready for last-minute guest requests. When you search for <strong>wedding taxi service Udaipur</strong>, you're looking for reliability, and that is what we have delivered for over 500+ successful weddings.
                     </p>
@@ -164,7 +164,7 @@ export default function WeddingCarPage() {
                              </div>
                           </div>
                        </div>
-                       <a href="tel:+917627013579" className="w-full bg-orange-500 py-4 rounded-xl text-center font-bold uppercase tracking-widest text-xs mt-10 block hover:bg-orange-600 transition-colors">
+                       <a href="tel:+917737737937" className="w-full bg-orange-500 py-4 rounded-xl text-center font-bold uppercase tracking-widest text-xs mt-10 block hover:bg-orange-600 transition-colors">
                           Get Personalized Quote
                        </a>
                     </div>
@@ -190,9 +190,10 @@ export default function WeddingCarPage() {
       <Footer />
 
       <div className="fixed bottom-0 left-0 w-full z-[100] md:hidden flex border-t border-slate-200 bg-white">
-        <a href="tel:+917627013579" className="flex-1 bg-slate-900 text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase tracking-widest"><Phone className="w-4 h-4 text-orange-500" /> Call Now</a>
-        <a href="https://wa.me/917627013579" className="flex-1 bg-[#25D366] text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase tracking-widest"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
+        <a href="tel:+917737737937" className="flex-1 bg-slate-900 text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase tracking-widest"><Phone className="w-4 h-4 text-orange-500" /> Call Now</a>
+        <a href="https://wa.me/917737737937" className="flex-1 bg-[#25D366] text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase tracking-widest"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
       </div>
     </main>
   );
 }
+

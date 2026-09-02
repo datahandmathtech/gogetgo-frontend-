@@ -43,8 +43,8 @@ export default function Footer() {
   const isLiveUdaipurPage = pathname?.includes('/live-udaipur');
   const isBookingPage = pathname?.includes('/booking');
 
-  let phoneDisplay = "+91 76270 13579";
-  let phoneLink = "tel:+917627013579";
+  let phoneDisplay = "+91 77377 37937";
+  let phoneLink = "tel:+917737737937";
   
   if (isMultiDayPage) {
     phoneDisplay = "+91 63674 66426";
@@ -56,8 +56,8 @@ export default function Footer() {
     phoneDisplay = "+91 80005 05810";
     phoneLink = "tel:+918000505810";
   } else if (isBookingPage) {
-    phoneDisplay = "+91 76270 13579";
-    phoneLink = "tel:+917627013579";
+    phoneDisplay = "+91 77377 37937";
+    phoneLink = "tel:+917737737937";
   }
 
   const currentYear = new Date().getFullYear();
@@ -117,21 +117,21 @@ export default function Footer() {
             <Link href="/" className="inline-flex items-center gap-4 group">
               <div className="relative w-16 h-16 bg-white rounded-2xl p-2 shadow-xl transition-transform duration-500 group-hover:scale-105">
                 <Image 
-                  src="/logo.png"
-                  alt="Yatree Logo"
+                  src="/logo.webp"
+                  alt="GoGetGo Logo"
                   fill
                   sizes="64px"
                   className="object-contain p-2"
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-3xl font-black tracking-tighter leading-none mb-1 text-white">YATREE</span>
-                <span className="text-xs font-bold text-gold-premium uppercase tracking-[0.3em] leading-none">Destination</span>
+                <span className="text-3xl font-black tracking-tighter leading-none mb-1 text-white">GOGETGO</span>
+                <span className="text-xs font-bold text-gold-premium uppercase tracking-[0.3em] leading-none">Taxi</span>
               </div>
             </Link>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm font-medium">
-              Yatree Destination is Udaipur's premier taxi and travel service. We provide luxury Innova Crystas, Tempo Travellers, and premium sedans for local sightseeing and outstation tours.
+              GoGetGo Taxi is Udaipur's premier taxi and travel service. We provide luxury Innova Crystas, Tempo Travellers, and premium sedans for local sightseeing and outstation tours.
             </p>
 
             <div className="flex items-center gap-4">
@@ -172,11 +172,11 @@ export default function Footer() {
                   <Mail className="w-4 h-4" />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <a href="mailto:Kavishjain@yatreedestination.com" className="text-sm text-slate-400 font-medium hover:text-gold-premium transition-colors">
-                    Kavishjain@yatreedestination.com
+                  <a href="mailto:info@gogetgotaxi.com" className="text-sm text-slate-400 font-medium hover:text-gold-premium transition-colors">
+                    info@gogetgotaxi.com
                   </a>
-                  <a href="mailto:info@yatreedestination.com" className="text-sm text-slate-400 font-medium hover:text-gold-premium transition-colors">
-                    info@yatreedestination.com
+                  <a href="mailto:info@gogetgotaxi.com" className="text-sm text-slate-400 font-medium hover:text-gold-premium transition-colors">
+                    info@gogetgotaxi.com
                   </a>
                 </div>
               </div>
@@ -233,7 +233,7 @@ export default function Footer() {
         {/* Copyright & Credits */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-white/10">
           <p className="text-xs font-medium text-slate-400">
-            &copy; {currentYear} Yatree Destination. All rights reserved.
+            &copy; {currentYear} GoGetGo Taxi. All rights reserved.
           </p>
           
           <div className="flex items-center gap-6 text-xs font-medium text-slate-400">
@@ -258,6 +258,7 @@ export default function Footer() {
     </footer>
   );
 }
+
 
 
 

@@ -28,7 +28,7 @@ export default function SEOManagementPage() {
     <AdminLayout>
       <div className="space-y-8">
         <div>
-          <h1 className="text-3xl font-heading font-bold text-white mb-2">SEO Management</h1>
+          <h1 className="text-3xl font-heading font-bold text-white mb-2 font-serif">SEO Management</h1>
           <p className="text-white/60">Monitor and optimize your platform's search engine visibility.</p>
         </div>
 

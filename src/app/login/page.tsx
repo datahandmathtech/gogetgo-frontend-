@@ -52,8 +52,8 @@ export default function LoginPage() {
           <div className="w-16 h-16 bg-gold-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-gold-600/20">
             <ShieldCheck className="text-white w-10 h-10" />
           </div>
-          <h1 className="text-3xl font-heading font-bold text-white mb-2">Admin Login</h1>
-          <p className="text-white/60">Yatree Destination Management System</p>
+          <h1 className="text-3xl font-heading font-bold text-white mb-2 font-serif">Admin Login</h1>
+          <p className="text-white/60">GoGetGo Taxi Management System</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -67,7 +67,7 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="bg-white/5 border-white/10 text-white h-12 pl-12 rounded-xl focus:ring-gold-500"
-                placeholder="admin@yatreedestination.com"
+                placeholder="admin@gogetgotaxi.com"
               />
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function LoginPage() {
         </form>
 
         <p className="text-center mt-8 text-white/40 text-sm">
-          Secure enterprise access. Managed by Yatree Destination.
+          Secure enterprise access. Managed by GoGetGo Taxi.
         </p>
       </motion.div>
     </div>

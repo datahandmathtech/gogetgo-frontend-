@@ -1,19 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --font-heading: var(--font-outfit), "Outfit", sans-serif;
+  --font-heading: var(--font-playfair), "Playfair Display", serif;
   --font-body: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;
   --font-mono: var(--font-inter), "Inter", sans-serif;
+  --font-serif: var(--font-playfair), "Playfair Display", serif;
+  --font-script: var(--font-great-vibes), "Great Vibes", cursive;
 
-  --color-midnight: #020617;
-  --color-navy-950: #020617;
-  --color-navy-900: #0f172a;
-  --color-gold-premium: #d4af37;
-  --color-gold-light: #f1e4bc;
-  --color-slate-50: #f8fafc;
-  --color-slate-100: #f1f5f9;
-  --color-slate-200: #e2e8f0;
-  --color-slate-900: #0f172a;
+  --color-midnight: #0A192F;
+  --color-navy-950: #060F1D;
+  --color-navy-900: #0A192F;
+  --color-gold-premium: #38bdf8; /* Bright Sky Blue for good contrast */
+  --color-gold-light: #7dd3fc; /* Lighter Sky Blue */
+  --color-slate-50: #fafafa;
+  --color-slate-100: #f4f4f5;
+  --color-slate-200: #e4e4e7;
+  --color-slate-900: #0A192F;
   
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -32,12 +34,12 @@
 @layer base {
   :root {
     --background: #ffffff;
-    --foreground: #020617;
-    --primary: #d4af37; /* Champagne Gold */
-    --accent: #f97316;  /* Keeping the orange as a vibrant accent */
-    --muted: #f8fafc;
-    --border: #e2e8f0;
-    --dark-bg: #020617;
+    --foreground: #0A192F;
+    --primary: #38bdf8; /* Sky Blue */
+    --accent: #7dd3fc;  /* Light Sky Blue */
+    --muted: #fafafa;
+    --border: #e4e4e7;
+    --dark-bg: #0A192F;
   }
 
   * {
@@ -71,10 +73,10 @@
     opacity: 0.04;
     z-index: 9999;
   }
+}
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
-    color: var(--midnight);
+    font-family: var(--font-playfair), "Playfair Display", serif;
     font-weight: 700;
     letter-spacing: -0.02em;
   }
@@ -84,7 +86,6 @@
     background-color: var(--primary);
     color: white;
   }
-}
 
 @layer components {
   /* Performance Optimized Sections */
@@ -241,46 +242,6 @@ html.dark body:has(#three-d-scroll-bg) .bg-navy-950 {
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3) !important;
 }
 
-/* 3. Typography Color Fixes for Perfect Contrast on Dark/Light 3D Canvas */
-
-/* Light Theme Contrast */
-html:not(.dark) body:has(#three-d-scroll-bg) h1,
-html:not(.dark) body:has(#three-d-scroll-bg) h2,
-html:not(.dark) body:has(#three-d-scroll-bg) h3,
-html:not(.dark) body:has(#three-d-scroll-bg) h4,
-html:not(.dark) body:has(#three-d-scroll-bg) h5,
-html:not(.dark) body:has(#three-d-scroll-bg) h6,
-html:not(.dark) body:has(#three-d-scroll-bg) .text-midnight,
-html:not(.dark) body:has(#three-d-scroll-bg) .text-slate-900,
-html:not(.dark) body:has(#three-d-scroll-bg) .text-slate-950 {
-  color: #0f172a !important; /* Deep dark slate */
-}
-html:not(.dark) body:has(#three-d-scroll-bg) p,
-html:not(.dark) body:has(#three-d-scroll-bg) .text-slate-600,
-html:not(.dark) body:has(#three-d-scroll-bg) .text-slate-500 {
-  color: #334155 !important; /* Dark grey */
-}
-
-/* Dark Theme Contrast */
-html.dark body:has(#three-d-scroll-bg) h1,
-html.dark body:has(#three-d-scroll-bg) h2,
-html.dark body:has(#three-d-scroll-bg) h3,
-html.dark body:has(#three-d-scroll-bg) h4,
-html.dark body:has(#three-d-scroll-bg) h5,
-html.dark body:has(#three-d-scroll-bg) h6,
-html.dark body:has(#three-d-scroll-bg) .text-midnight,
-html.dark body:has(#three-d-scroll-bg) .text-slate-900,
-html.dark body:has(#three-d-scroll-bg) .text-slate-950,
-html.dark body:has(#three-d-scroll-bg) .text-navy-950 {
-  color: #ffffff !important; /* Solid white */
-}
-html.dark body:has(#three-d-scroll-bg) p,
-html.dark body:has(#three-d-scroll-bg) span,
-html.dark body:has(#three-d-scroll-bg) .text-slate-600,
-html.dark body:has(#three-d-scroll-bg) .text-slate-500 {
-  color: #cbd5e1 !important; /* Cool grey */
-}
-
 /* ==========================================================================
    ELFSIGHT WIDGET OVERRIDES
    ========================================================================== */
@@ -295,3 +256,10 @@ a[href*="apps.elfsight.com"],
   pointer-events: none !important;
   visibility: hidden !important;
 }
+
+@keyframes slowZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+

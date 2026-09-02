@@ -51,7 +51,7 @@ export default function StatsCounter() {
               <div className="w-16 h-16 bg-white/5 rounded-[2rem] flex items-center justify-center mb-6 group-hover:bg-gold-premium group-hover:text-navy-900 transition-all duration-500 border border-white/10">
                 <stat.icon className="w-8 h-8" />
               </div>
-              <h3 className="text-4xl md:text-5xl font-black text-white mb-2 tracking-tight group-hover:text-gold-premium transition-colors">
+              <h3 className="text-4xl md:text-5xl font-black text-white mb-2 tracking-tight group-hover:text-gold-premium transition-colors font-serif">
                 {stat.value}
               </h3>
               <p className="text-gold-premium font-bold uppercase tracking-widest text-[10px] mb-4">

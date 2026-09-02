@@ -52,8 +52,8 @@ export default function AdminDashboard() {
     <AdminLayout>
       <div className="space-y-8">
         <div>
-          <h1 className="text-3xl font-heading font-bold text-white mb-2">Welcome Back, Admin</h1>
-          <p className="text-white/60">Here's what's happening with Yatree Destination today.</p>
+          <h1 className="text-3xl font-heading font-bold text-white mb-2 font-serif">Welcome Back, Admin</h1>
+          <p className="text-white/60">Here's what's happening with GoGetGo Taxi today.</p>
         </div>
 
         {/* Stats Grid */}

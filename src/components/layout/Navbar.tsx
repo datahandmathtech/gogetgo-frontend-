@@ -16,11 +16,11 @@ export default function Navbar() {
   const isLiveUdaipurPage = pathname?.includes('/live-udaipur');
   const isBookingPage = pathname?.includes('/booking');
   
-  let phoneLink = "tel:+917627013579";
+  let phoneLink = "tel:+917737737937";
   if (isMultiDayPage) phoneLink = "tel:+916367466426";
   else if (isCorporatePage) phoneLink = "tel:+919359975658";
   else if (isLiveUdaipurPage) phoneLink = "tel:+918000505810";
-  else if (isBookingPage) phoneLink = "tel:+917627013579";
+  else if (isBookingPage) phoneLink = "tel:+917737737937";
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -30,11 +30,8 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "About Us", href: "/about" },
-    { name: "Book Now", href: "/booking/car" },
-    { name: "Tour Packages", href: "/multi-day-taxi-packages" },
-    { name: "MICE", href: "/corporate-travel-udaipur" },
+    { name: "Book Now", href: "/booking" },
     { name: "Explore Udaipur", href: "/explore-udaipur" },
-    { name: "Live Udaipur", href: "/live-udaipur" },
     { name: "Contact", href: "/contact" }
   ];
 
@@ -51,17 +48,13 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2 md:gap-3 group">
             <div className="relative w-10 h-10 md:w-16 md:h-16 transition-transform duration-500 group-hover:scale-110 shrink-0">
               <Image 
-                src="/logo.png"
-                alt="Yatree Destination Logo"
+                src="/logo.webp"
+                alt="GoGetGo Taxi Logo"
                 fill
                 sizes="(max-width: 768px) 40px, 64px"
                 className="object-contain"
                 priority
               />
-            </div>
-            <div className={`flex flex-col transition-colors duration-300 ${isSolid ? "text-midnight" : "text-white"}`}>
-              <span className="text-lg md:text-3xl font-black tracking-tighter leading-none">YATREE</span>
-              <span className="text-[7px] md:text-[10px] font-bold uppercase tracking-[0.2em] mt-0.5 text-gold-premium whitespace-nowrap">Destination</span>
             </div>
           </Link>
 
@@ -118,11 +111,7 @@ export default function Navbar() {
               <div className="flex justify-between items-center mb-12 pt-2">
                 <div className="flex items-center gap-3">
                   <div className="relative w-12 h-12">
-                    <Image src="/logo.png" alt="Logo" fill className="object-contain" />
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-white font-black text-2xl leading-none tracking-tighter">YATREE</span>
-                    <span className="text-gold-premium text-[10px] font-bold uppercase tracking-[0.3em] mt-1">Destination</span>
+                    <Image src="/logo.webp" alt="Logo" fill className="object-contain" />
                   </div>
                 </div>
                 <button 
@@ -179,3 +168,4 @@ export default function Navbar() {
     </>
   );
 }
+

@@ -54,7 +54,7 @@ export default function SightseeingHighlights() {
                 <Camera className="w-4 h-4" />
                 Udaipur Sightseeing Guide
              </div>
-             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy-900 leading-tight">
+             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy-900 leading-tight font-serif">
                Discover the <span className="text-gold-premium">Magical Landmarks</span> of Udaipur
              </h2>
           </div>
@@ -116,7 +116,7 @@ export default function SightseeingHighlights() {
                 Navigating the narrow streets of Udaipur's old city can be challenging for outsiders. Our drivers are local residents who know the best shortcuts, the most authentic food joints, and the quietest photography spots. Experience the 'City of Lakes' with the dignity and comfort you deserve.
               </p>
            </div>
-           <button className="h-14 px-10 bg-gold-premium text-midnight rounded-full whitespace-nowrap text-xs font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-all">
+           <button className="h-14 px-10 bg-gold-premium text-white rounded-full whitespace-nowrap text-xs font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-all">
               View Local Packages
            </button>
         </div>
@@ -125,3 +125,4 @@ export default function SightseeingHighlights() {
     </section>
   );
 }
+

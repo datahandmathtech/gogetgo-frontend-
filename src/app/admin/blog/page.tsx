@@ -64,7 +64,7 @@ export default function BlogCMSPage() {
       <div className="space-y-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
-            <h1 className="text-3xl font-heading font-bold text-white mb-2">Blog CMS</h1>
+            <h1 className="text-3xl font-heading font-bold text-white mb-2 font-serif">Blog CMS</h1>
             <p className="text-white/60">Create and manage SEO-optimized travel guides and news.</p>
           </div>
           <Button className="bg-gold-600 hover:bg-gold-700 text-white h-12 px-6">

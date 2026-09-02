@@ -130,13 +130,13 @@ export default function CorporateMicePage() {
         </div>
       </div>
 
-      {/* 2. WHY CHOOSE YATREE DESTINATION? */}
+      {/* 2. WHY CHOOSE GoGetGo Taxi? */}
       <section className="py-20 container mx-auto px-6 max-w-[1400px]">
         <div className="flex items-center justify-center gap-4 mb-12">
           <div className="h-[1px] w-16 bg-[#B68C5A]" />
           <div className="w-2 h-2 rotate-45 bg-[#B68C5A]" />
-          <h2 className="text-2xl lg:text-3xl font-bold text-[#13264F] uppercase tracking-widest font-serif text-center px-4">
-            Why Choose Yatree Destination?
+          <h2 className="text-2xl lg:text-3xl font-bold text-[#13264F] uppercase tracking-widest font-serif text-center px-4 font-serif">
+            Why Choose GoGetGo Taxi?
           </h2>
           <div className="w-2 h-2 rotate-45 bg-[#B68C5A]" />
           <div className="h-[1px] w-16 bg-[#B68C5A]" />
@@ -243,7 +243,7 @@ export default function CorporateMicePage() {
         <div className="flex items-center justify-center gap-4 mb-12">
           <div className="h-[1px] w-16 bg-[#B68C5A]" />
           <div className="w-2 h-2 rotate-45 bg-[#B68C5A]" />
-          <h2 className="text-2xl lg:text-3xl font-bold text-[#13264F] uppercase tracking-widest font-serif text-center px-4">
+          <h2 className="text-2xl lg:text-3xl font-bold text-[#13264F] uppercase tracking-widest font-serif text-center px-4 font-serif">
             Event Add-On Services
           </h2>
           <div className="w-2 h-2 rotate-45 bg-[#B68C5A]" />
@@ -334,7 +334,7 @@ export default function CorporateMicePage() {
             
             {/* Left Content */}
             <div className="flex-1 text-center lg:text-left">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#B68C5A] mb-4 font-serif leading-tight">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#B68C5A] mb-4 font-serif leading-tight font-serif">
                 Planning a Wedding or <br className="hidden md:block" /> Corporate Event in Udaipur?
               </h2>
               <p className="text-white/80 text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
@@ -372,7 +372,7 @@ export default function CorporateMicePage() {
               </a>
               <a href="tel:+919359975658" className="w-full bg-[#0F1E3F] border border-[#1C3A7A] text-white py-4 px-6 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-[#1C3A7A] transition-colors shadow-lg">
                 <Phone className="w-5 h-5 text-[#B68C5A]" />
-                Contact Yatree
+                Contact GoGetGo
               </a>
             </div>
           </div>

@@ -20,8 +20,8 @@ export default function BookingForm() {
 
   const handleBooking = () => {
     const emailText = email ? `%0A*Email:* ${email}` : '';
-    const message = `Hello Yatree Destination, I would like to request a booking.%0A%0A*Trip Type:* ${activeTab}%0A*Pickup:* ${pickup || 'Not specified'}%0A*Drop:* ${drop || 'Not specified'}%0A*Date:* ${date || 'Not specified'}%0A*Vehicle:* ${vehicle || 'Not specified'}${emailText}`;
-    window.open(`https://wa.me/917627013579?text=${message}`, '_blank');
+    const message = `Hello GoGetGo Taxi, I would like to request a booking.%0A%0A*Trip Type:* ${activeTab}%0A*Pickup:* ${pickup || 'Not specified'}%0A*Drop:* ${drop || 'Not specified'}%0A*Date:* ${date || 'Not specified'}%0A*Vehicle:* ${vehicle || 'Not specified'}${emailText}`;
+    window.open(`https://wa.me/917737737937?text=${message}`, '_blank');
   };
   return (
     <section className="py-20 relative bg-navy-950">
@@ -186,10 +186,11 @@ export default function BookingForm() {
         >
           <h2 className="text-2xl font-black text-white mb-4 tracking-tight">Top Rated <span className="text-gold-500">Taxi Service in Udaipur</span></h2>
           <p className="text-white/70 text-sm leading-relaxed font-medium">
-            Whether you are looking for a reliable <strong className="text-white font-bold">Udaipur airport taxi</strong>, a comfortable cab for local sightseeing, or a premium <strong className="text-white font-bold">outstation cab from Udaipur</strong>, Yatree Destination has you covered. We specialize in outstation trips to popular destinations including <strong className="text-gold-500 font-semibold">Mount Abu, Ranakpur, Kumbhalgarh, Nathdwara, Haldighati, and Chittorgarh</strong>. Experience seamless booking, professional drivers, and the best fares for your next adventure in Rajasthan.
+            Whether you are looking for a reliable <strong className="text-white font-bold">Udaipur airport taxi</strong>, a comfortable cab for local sightseeing, or a premium <strong className="text-white font-bold">outstation cab from Udaipur</strong>, GoGetGo Taxi has you covered. We specialize in outstation trips to popular destinations including <strong className="text-gold-500 font-semibold">Mount Abu, Ranakpur, Kumbhalgarh, Nathdwara, Haldighati, and Chittorgarh</strong>. Experience seamless booking, professional drivers, and the best fares for your next adventure in Rajasthan.
           </p>
         </motion.div>
       </div>
     </section>
   );
 }
+

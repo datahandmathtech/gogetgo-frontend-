@@ -22,7 +22,7 @@ export default function WeddingTransportation() {
           <div className="space-y-8">
             <div>
               <span className="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs">Royal Destinations</span>
-              <h2 className="text-4xl md:text-5xl font-black text-white mt-2 mb-6 tracking-tight">
+              <h2 className="text-4xl md:text-5xl font-black text-white mt-2 mb-6 tracking-tight font-serif">
                 Beautiful Wedding Transportation.
               </h2>
               <p className="text-lg text-slate-300 leading-relaxed">
@@ -62,7 +62,7 @@ export default function WeddingTransportation() {
             </div>
 
             <div className="pt-6">
-               <a href="tel:+917627013579" className="inline-block bg-orange-500 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/20">
+               <a href="tel:+917737737937" className="inline-block bg-orange-500 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/20">
                   Discuss Your Wedding Logistics
                </a>
             </div>
@@ -73,3 +73,4 @@ export default function WeddingTransportation() {
     </section>
   );
 }
+

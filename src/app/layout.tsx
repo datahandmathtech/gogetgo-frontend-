@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Outfit, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Outfit, Plus_Jakarta_Sans, Playfair_Display, Great_Vibes } from "next/font/google";
 import "./globals.css";
 import { SmoothScroll } from "@/lib/lenis";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -10,6 +10,17 @@ import InteractiveBackground from "@/components/ui/InteractiveBackground";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
+
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-great-vibes",
 });
 
 const outfit = Outfit({
@@ -43,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="overflow-x-hidden">
       <body
-        className={`${inter.variable} ${outfit.variable} ${jakarta.variable} antialiased overflow-x-hidden relative`}
+        className={`${inter.variable} ${outfit.variable} ${jakarta.variable} ${playfair.variable} ${greatVibes.variable} antialiased overflow-x-hidden relative`}
       >
         <CustomCursor />
         <script

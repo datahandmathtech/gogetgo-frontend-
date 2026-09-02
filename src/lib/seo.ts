@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
 export const SITE_CONFIG = {
-  name: "Yatree Destination",
-  description: "Yatree Destination is Udaipur's premier Taxi Service & Rajasthan Tour Agency. We provide professional Airport Taxi, Luxury Innova Crysta Rental, and Tempo Traveller in Udaipur. Explore Rajasthan with our curated expert tour packages.",
-  url: "https://www.yatreedestination.com",
-  ogImage: "/logo.png",
+  name: "GoGetGo Taxi",
+  description: "GoGetGo Taxi is Udaipur's premier Taxi Service & Rajasthan Tour Agency. We provide professional Airport Taxi, Luxury Innova Crysta Rental, and Tempo Traveller in Udaipur. Explore Rajasthan with our curated expert tour packages.",
+  url: "https://www.gogetgotaxi.com",
+  ogImage: "/logo.webp",
   twitterHandle: "@yatreedestination",
   address: "97, BEHIND VIKAS HOSPITAL, HIRAN MAGRI SEC 3, UDAIPUR, Udaipur, Rajasthan, 313001",
-  phone: "+91 76270 13579",
-  email: "Kavishjain@yatreedestination.com",
+  phone: "+91 77377 37937",
+  email: "info@gogetgotaxi.com",
   keywords: [
     "Taxi Service in Udaipur",
     "Cab Service in Udaipur",
@@ -27,7 +27,7 @@ export function constructMetadata({
   title = SITE_CONFIG.name,
   description = SITE_CONFIG.description,
   image = SITE_CONFIG.ogImage,
-  icons = "/logo.png",
+  icons = "/logo.webp",
   noIndex = false,
 }: {
   title?: string;
@@ -162,3 +162,4 @@ export function getFAQSchema(faqs: { q: string, a: string }[]) {
     }))
   };
 }
+

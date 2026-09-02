@@ -8,7 +8,7 @@ export default function EventTransportation() {
         
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs">Flawless Execution</span>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 mt-2 mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-black text-slate-900 mt-2 mb-6 tracking-tight font-serif">
             Professional Event Transportation.
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">

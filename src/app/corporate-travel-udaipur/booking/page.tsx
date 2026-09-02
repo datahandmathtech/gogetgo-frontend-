@@ -65,7 +65,7 @@ function CorporateBookingContent() {
         },
         body: JSON.stringify({
           customerName: formData.name,
-          email: `${formData.phone.replace(/[^0-9]/g, '')}@yatreedestination.com`,
+          email: `${formData.phone.replace(/[^0-9]/g, '')}@gogetgotaxi.com`,
           phone: formData.phone,
           pickupLocation: "Corporate Request",
           dropLocation: "Corporate Destination",
@@ -79,8 +79,8 @@ function CorporateBookingContent() {
       console.warn("DB save offline", err);
     }
 
-    const whatsappNumber = "917627013579";
-    const text = `*YATREE DESTINATION - B2B PRIORITY RESERVATION*\n` +
+    const whatsappNumber = "917737737937";
+    const text = `*GoGetGo Taxi - B2B PRIORITY RESERVATION*\n` +
                  `----------------------------------------\n` +
                  `👤 *Company Rep:* ${formData.name}\n` +
                  `📞 *Direct Phone:* ${formData.phone}\n` +
@@ -129,7 +129,7 @@ function CorporateBookingContent() {
             <span className="bg-amber-500/10 border border-amber-500/20 text-amber-700 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full inline-flex items-center gap-1.5 mb-4">
               <Star className="w-3.5 h-3.5 text-amber-600 fill-current" /> {selectedVehicle.tag}
             </span>
-            <h4 className="text-3xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-3">{selectedVehicle.name}</h4>
+            <h4 className="text-3xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-3 font-serif">{selectedVehicle.name}</h4>
             <p className="text-sm text-slate-600 font-medium leading-relaxed mb-6">{selectedVehicle.description}</p>
           </div>
 
@@ -178,7 +178,7 @@ function CorporateBookingContent() {
           ) : (
             <>
               <span className="text-[10px] font-black uppercase tracking-[0.25em] text-slate-400 mb-2 block">Priority B2B Desk</span>
-              <h3 className="text-2xl md:text-3xl font-black text-slate-950 uppercase tracking-tighter mb-8">Concierge Reservation</h3>
+              <h3 className="text-2xl md:text-3xl font-black text-slate-950 uppercase tracking-tighter mb-8 font-serif">Concierge Reservation</h3>
 
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="space-y-1.5">
@@ -260,4 +260,5 @@ export default function CorporateBookingPage() {
     </main>
   );
 }
+
 

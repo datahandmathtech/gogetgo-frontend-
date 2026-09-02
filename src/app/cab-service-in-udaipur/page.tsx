@@ -10,7 +10,7 @@ export default function CabServiceInUdaipur() {
       serviceName="Cab Service"
       title="Professional Cab Service in Udaipur | 24/7 Local Taxi"
       heroImage="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80"
-      introduction="Looking for a reliable cab service in Udaipur? Yatree Destination provides professional, well-maintained, and punctual cabs for local sightseeing, business travel, and outstation trips. Book your ride with the most trusted cab operator in the City of Lakes."
+      introduction="Looking for a reliable cab service in Udaipur? GoGetGo Taxi provides professional, well-maintained, and punctual cabs for local sightseeing, business travel, and outstation trips. Book your ride with the most trusted cab operator in the City of Lakes."
       whyChooseContent="A good cab service should be prompt, clean, and reasonably priced. We pride ourselves on our '5-minute early' arrival policy and our fleet of sanitized vehicles. Our drivers are local residents who know every corner of Udaipur, ensuring you reach your destination through the fastest and safest routes."
       popularRoutes={[
         { from: "Udaipur City", to: "Monsoon Palace", price: "900" },
@@ -26,12 +26,12 @@ export default function CabServiceInUdaipur() {
       mainContent={
         <div className="space-y-10">
           <section>
-            <h2 className="text-4xl font-bold text-navy-900 mb-6">Your Trusted Partner for Every Mile in Udaipur</h2>
+            <h2 className="text-4xl font-bold text-navy-900 mb-6 font-serif">Your Trusted Partner for Every Mile in Udaipur</h2>
             <p className="text-slate-600 leading-relaxed text-lg">
-              Navigating the romantic streets of Udaipur should be as beautiful as the city itself. At Yatree Destination, we provide the most reliable **Cab Service in Udaipur**, catering to thousands of domestic and international travelers every month. Whether you need a quick ride to a dinner reservation at a lakefront restaurant or a full-day cab for exploring the royal heritage monuments, our professional drivers and clean vehicles are always at your service.
+              Navigating the romantic streets of Udaipur should be as beautiful as the city itself. At GoGetGo Taxi, we provide the most reliable **Cab Service in Udaipur**, catering to thousands of domestic and international travelers every month. Whether you need a quick ride to a dinner reservation at a lakefront restaurant or a full-day cab for exploring the royal heritage monuments, our professional drivers and clean vehicles are always at your service.
             </p>
             <p className="text-slate-600 leading-relaxed text-lg mt-4">
-              We understand that modern travelers value punctuality and hygiene above all. That's why our dispatch system ensures that your cab arrives 5-10 minutes before the scheduled time, and every vehicle undergoes a thorough sanitization process after every single trip. With Yatree Destination, you don't just book a cab; you book peace of mind.
+              We understand that modern travelers value punctuality and hygiene above all. That's why our dispatch system ensures that your cab arrives 5-10 minutes before the scheduled time, and every vehicle undergoes a thorough sanitization process after every single trip. With GoGetGo Taxi, you don't just book a cab; you book peace of mind.
             </p>
           </section>
 
@@ -49,7 +49,7 @@ export default function CabServiceInUdaipur() {
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-navy-900 mb-6">Affordable Cab Hire for Local Sightseeing and Shopping</h2>
+            <h2 className="text-3xl font-bold text-navy-900 mb-6 font-serif">Affordable Cab Hire for Local Sightseeing and Shopping</h2>
             <p className="text-slate-600 leading-relaxed">
               Udaipur is famous for its vibrant bazaars and cultural landmarks like **Jagdish Temple**, **Bagore Ki Haveli**, and the **Vintage Car Museum**. Our **Udaipur Cab Rental** service provides flexible sightseeing packages that allow you to explore the city at your own pace. Forget about the hassle of parking or navigating busy traffic; our experienced chauffeurs handle everything while you enjoy the royal views.
             </p>
@@ -60,7 +60,7 @@ export default function CabServiceInUdaipur() {
 
           <section className="bg-navy-900 text-white p-12 rounded-[3.5rem] relative overflow-hidden">
              <div className="absolute top-0 right-0 w-32 h-32 bg-gold-500/10 rounded-full -translate-y-1/2 translate-x-1/2" />
-             <h3 className="text-3xl font-bold mb-8">Why Our Cabs Stand Out?</h3>
+             <h3 className="text-3xl font-bold mb-8 font-serif">Why Our Cabs Stand Out?</h3>
              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <li className="flex gap-4">
                    <CheckCircle2 className="w-6 h-6 text-gold-500 shrink-0" />
@@ -82,7 +82,7 @@ export default function CabServiceInUdaipur() {
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-navy-900 mb-6">Reliable Cab Service for Corporate and Event Travel</h2>
+            <h2 className="text-3xl font-bold text-navy-900 mb-6 font-serif">Reliable Cab Service for Corporate and Event Travel</h2>
             <p className="text-slate-600 leading-relaxed">
               For corporate travelers, we offer professional and reliable cab solutions. From monthly car rental contracts to airport transfers for executives, we provide a fleet of premium sedans and SUVs. Our chauffeurs maintain high standards of professional etiquette, ensuring your business trips are productive and comfortable.
             </p>

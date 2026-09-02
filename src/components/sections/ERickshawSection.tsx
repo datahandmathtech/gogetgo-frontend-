@@ -72,7 +72,7 @@ export default function ERickshawSection() {
                   >
                     <Image
                       src={rickshawPhotos[currentImageIdx] || rickshawPhotos[0]}
-                      alt={`Yatree Destination Auto Rickshaw ${currentImageIdx + 1}`}
+                      alt={`GoGetGo Taxi Auto Rickshaw ${currentImageIdx + 1}`}
                       fill
                       className="object-cover"
                     />
@@ -112,7 +112,7 @@ export default function ERickshawSection() {
                   className="absolute bottom-10 left-10 p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-gold-premium rounded-2xl flex items-center justify-center text-midnight">
+                    <div className="w-12 h-12 bg-gold-premium rounded-2xl flex items-center justify-center text-white">
                       <Leaf className="w-6 h-6" />
                     </div>
                     <div>
@@ -136,7 +136,7 @@ export default function ERickshawSection() {
               
               <KineticTitle 
                 text="REVOLUTIONIZING THE ROYAL JOURNEY."
-                className="text-3xl sm:text-4xl lg:text-[2.75rem] font-black text-white leading-[1] tracking-tighter uppercase mb-6"
+                className="text-3xl sm:text-4xl lg:text-[2.75rem] font-black text-white leading-[1] tracking-tighter uppercase mb-6 font-serif"
               />
               
               <Reveal delay={0.4} width="100%">
@@ -154,7 +154,7 @@ export default function ERickshawSection() {
               {services.map((service, index) => (
                 <Reveal key={index} delay={0.2 + index * 0.1} width="100%">
                   <div className="group p-5 rounded-[1.5rem] bg-white/5 border border-white/10 hover:border-gold-premium/30 hover:bg-white/10 transition-all duration-500">
-                    <div className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center mb-3 group-hover:bg-gold-premium group-hover:text-midnight transition-colors duration-500 text-gold-premium">
+                    <div className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center mb-3 group-hover:bg-gold-premium group-hover:text-white transition-colors duration-500 text-gold-premium">
                       {service.icon}
                     </div>
                     <h4 className="text-white text-sm font-bold mb-1 tracking-tight">{service.title}</h4>
@@ -166,7 +166,7 @@ export default function ERickshawSection() {
 
             <Reveal delay={0.8} width="100%">
               <div className="pt-4">
-                <button className="h-12 px-8 bg-gold-premium text-midnight rounded-full font-black text-[11px] uppercase tracking-[0.2em] shadow-2xl hover:scale-105 transition-all flex items-center gap-2">
+                <button className="h-12 px-8 bg-gold-premium text-white rounded-full font-black text-[11px] uppercase tracking-[0.2em] shadow-2xl hover:scale-105 transition-all flex items-center gap-2">
                   Inquire for Events <ChevronRight className="w-4 h-4" />
                 </button>
               </div>
@@ -178,3 +178,4 @@ export default function ERickshawSection() {
     </section>
   );
 }
+

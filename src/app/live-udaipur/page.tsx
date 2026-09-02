@@ -16,7 +16,7 @@ export default function LiveUdaipurPage() {
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `Hello Yatree Destination! I need a local taxi in Udaipur:
+    const message = `Hello GoGetGo Taxi! I need a local taxi in Udaipur:
 Pickup: ${formData.pickup}
 Drop/Destination: ${formData.drop}
 Date: ${formData.date}
@@ -28,7 +28,7 @@ Car Type: ${formData.carType}`;
   };
 
   const handleWhatsAppQuote = (packageName: string, carType: string, price: string) => {
-    const message = `Hello Yatree Destination! I want to book the "${packageName}" for a ${carType} at ₹${price}. Please confirm availability.`;
+    const message = `Hello GoGetGo Taxi! I want to book the "${packageName}" for a ${carType} at ₹${price}. Please confirm availability.`;
     window.open(`https://wa.me/918000505810?text=${encodeURIComponent(message)}`, "_blank");
   };
 
@@ -210,7 +210,7 @@ Car Type: ${formData.carType}`;
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center mb-16">
             <span className="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs mb-4 block">Explore Udaipur & Beyond</span>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-4">Popular Taxi Services</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-4 font-serif">Popular Taxi Services</h2>
             <p className="text-slate-500 text-lg">Choose from our most loved local tours and transfers</p>
           </div>
 
@@ -249,15 +249,15 @@ Car Type: ${formData.carType}`;
       <section className="py-24 bg-slate-50 border-t border-slate-200">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center mb-16">
-            <span className="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs mb-4 block">Why Choose Yatree Destination</span>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">Experience the Difference</h2>
+            <span className="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs mb-4 block">Why Choose GoGetGo Taxi</span>
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight font-serif">Experience the Difference</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {[
               { title: "Safe & Reliable", desc: "Well-maintained cabs with verified drivers for your safety and peace of mind.", icon: <ShieldCheck className="w-8 h-8 text-orange-500" /> },
               { title: "Punctual Service", desc: "We value your time and ensure on-time pickups and drop-offs.", icon: <Clock className="w-8 h-8 text-orange-500" /> },
-              { title: "Transparent Pricing", desc: "No hidden charges. What you see is what you pay.", icon: <span className="text-3xl font-black text-orange-500">₹</span> },
+              { title: "Transparent Pricing", desc: "No hidden charges. What you see is what you pay.", icon: <span className="text-3xl font-black text-orange-500 font-serif">₹</span> },
               { title: "24x7 Support", desc: "Our team is available round the clock for your assistance.", icon: <Phone className="w-8 h-8 text-orange-500" /> },
               { title: "Highly Rated", desc: "Loved by thousands of happy travelers in Udaipur.", icon: <Star className="w-8 h-8 text-orange-500" /> }
             ].map((feature, i) => (
@@ -280,7 +280,7 @@ Car Type: ${formData.carType}`;
             
             {/* FAQs */}
             <div>
-              <h2 className="text-3xl font-black text-slate-900 mb-8">Frequently Asked Questions</h2>
+              <h2 className="text-3xl font-black text-slate-900 mb-8 font-serif">Frequently Asked Questions</h2>
               <div className="space-y-4">
                 {[
                   { q: "Are tolls, parking and driver allowance included?", a: "Tolls and parking are generally extra unless specified. Driver allowance is included for day trips." },
@@ -301,7 +301,7 @@ Car Type: ${formData.carType}`;
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/20 blur-[100px] rounded-full"></div>
               
               <div className="relative z-10">
-                <h2 className="text-4xl font-black text-white mb-6">Ready to explore Udaipur?</h2>
+                <h2 className="text-4xl font-black text-white mb-6 font-serif">Ready to explore Udaipur?</h2>
                 <p className="text-xl text-slate-300 mb-10 max-w-md mx-auto lg:mx-0">
                   Book your taxi now and travel with comfort and confidence.
                 </p>

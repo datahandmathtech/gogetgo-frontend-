@@ -44,7 +44,7 @@ export default function Fares() {
       {/* Page Header */}
       <section className="bg-navy-900 text-white py-16 border-b-4 border-[#f08b1d]">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-black mb-4 uppercase tracking-wider">Taxi Fares & Tariff</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 uppercase tracking-wider font-serif">Taxi Fares & Tariff</h1>
           <p className="text-lg text-slate-300">Transparent Pricing for Local Sightseeing & Outstation Travel in Udaipur</p>
         </div>
       </section>
@@ -61,7 +61,7 @@ export default function Fares() {
                    <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-between">
                       <div>
                         <span className="text-xs font-bold text-[#f08b1d] uppercase tracking-widest">{v.category}</span>
-                        <h2 className="text-3xl font-bold text-navy-900 mt-1 mb-6">{v.name}</h2>
+                        <h2 className="text-3xl font-bold text-navy-900 mt-1 mb-6 font-serif">{v.name}</h2>
                         
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
                            <div className="bg-slate-50 p-3 rounded text-center border border-slate-100">
@@ -84,7 +84,7 @@ export default function Fares() {
                       </div>
 
                       <div className="flex flex-col sm:flex-row gap-4 mt-auto">
-                        <a href="tel:+917627013579" className="flex-1 bg-[#1a365d] hover:bg-navy-800 text-white font-bold py-4 rounded text-center transition-colors flex justify-center items-center gap-2 uppercase tracking-wide">
+                        <a href="tel:+917737737937" className="flex-1 bg-[#1a365d] hover:bg-navy-800 text-white font-bold py-4 rounded text-center transition-colors flex justify-center items-center gap-2 uppercase tracking-wide">
                            <Phone className="w-5 h-5 text-[#f08b1d]" /> Book Now
                         </a>
                         <a href="/contact" className="flex-1 border-2 border-[#1a365d] text-[#1a365d] hover:bg-slate-50 font-bold py-4 rounded text-center transition-colors uppercase tracking-wide">
@@ -112,3 +112,4 @@ export default function Fares() {
     </main>
   );
 }
+

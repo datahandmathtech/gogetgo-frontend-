@@ -50,13 +50,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   if (type === "outstation") {
     return constructMetadata({
-      title: `Taxi from Udaipur to ${city} | Best Outstation Cabs | Yatree Destination`,
-      description: `Book a premium taxi from Udaipur to ${city}. Enjoy luxury Innova Crysta, Tempo Traveller, or Sedans for your outstation journey with Yatree Destination.`,
+      title: `Taxi from Udaipur to ${city} | Best Outstation Cabs | GoGetGo Taxi`,
+      description: `Book a premium taxi from Udaipur to ${city}. Enjoy luxury Innova Crysta, Tempo Traveller, or Sedans for your outstation journey with GoGetGo Taxi.`,
     });
   }
   
   return constructMetadata({
-    title: `${service.name} in ${city} | Yatree Destination`,
+    title: `${service.name} in ${city} | GoGetGo Taxi`,
     description: `Premium ${service.name} in ${city}. Book luxury Innova Crysta, Tempo Traveller, or Sedans for ${city} sightseeing, airport transfers, and outstation trips.`,
   });
 }
@@ -109,7 +109,7 @@ export default async function ProgrammaticPage({ params }: PageProps) {
         <div className="absolute inset-0 bg-[url(/premium_udaipur_taxi_hero_1778818369975.png)] bg-cover bg-center" />
         
         <div className="container mx-auto px-4 relative z-20 text-center mt-10">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight leading-[1.1]">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight leading-[1.1] font-serif">
             {type === "outstation" ? (
               <>Premium <span className="text-gold-premium">Taxi</span> <br /> from Udaipur to {city}</>
             ) : (
@@ -129,7 +129,7 @@ export default async function ProgrammaticPage({ params }: PageProps) {
               </span>
               <div className="absolute inset-0 bg-white translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300" />
             </Link>
-            <a href="tel:+917627013579" className="h-14 px-8 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold flex items-center gap-2 transition-all hover:bg-white/10 hover:border-white/40 active:scale-95">
+            <a href="tel:+917737737937" className="h-14 px-8 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold flex items-center gap-2 transition-all hover:bg-white/10 hover:border-white/40 active:scale-95">
               <Phone className="w-4 h-4 text-gold-premium" />
               Call Now
             </a>
@@ -148,7 +148,7 @@ export default async function ProgrammaticPage({ params }: PageProps) {
       <section className="py-24 bg-white dark:bg-navy-950">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-heading font-bold mb-8 text-navy-900 dark:text-white">
+            <h2 className="text-4xl font-heading font-bold mb-8 text-navy-900 dark:text-white font-serif">
               {type === "outstation" 
                 ? `Why Choose Our Taxi from Udaipur to ${city}?` 
                 : `Why Choose Our ${service.name} in ${city}?`
@@ -157,7 +157,7 @@ export default async function ProgrammaticPage({ params }: PageProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="space-y-6">
                 <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                  When it comes to **{type === "outstation" ? `traveling from Udaipur to ${city}` : `${service.name} in ${city}`}**, Yatree Destination stands out as the premier choice. 
+                  When it comes to **{type === "outstation" ? `traveling from Udaipur to ${city}` : `${service.name} in ${city}`}**, GoGetGo Taxi stands out as the premier choice. 
                   We understand that your travel needs are unique, whether you're a tourist exploring 
                   the City of Lakes or a corporate traveler on a tight schedule.
                 </p>
@@ -199,7 +199,7 @@ export default async function ProgrammaticPage({ params }: PageProps) {
               { label: "Years Experience", value: "6+" }
             ].map((stat, i) => (
               <div key={i} className="text-center">
-                <h4 className="text-4xl font-bold text-gold-500 mb-2">{stat.value}</h4>
+                <h4 className="text-4xl font-bold text-gold-500 mb-2 font-serif">{stat.value}</h4>
                 <p className="text-white/60 uppercase tracking-widest text-xs font-medium">{stat.label}</p>
               </div>
             ))}
@@ -211,7 +211,7 @@ export default async function ProgrammaticPage({ params }: PageProps) {
       <section className="py-24 bg-white dark:bg-navy-900">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-heading font-bold mb-8 text-navy-900 dark:text-white text-center">
+            <h2 className="text-3xl font-heading font-bold mb-8 text-navy-900 dark:text-white text-center font-serif">
               Clear & Transparent Pricing for {type === "outstation" ? `Udaipur to ${city}` : `${service.name} in ${city}`}
             </h2>
             <div className="overflow-x-auto rounded-2xl border border-gray-200 dark:border-navy-800 shadow-sm">
@@ -254,7 +254,7 @@ export default async function ProgrammaticPage({ params }: PageProps) {
       {/* SEO FAQs & FAQPage Schema */}
       <section className="py-24 bg-navy-50 dark:bg-navy-950 relative">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-heading font-bold mb-8 text-navy-900 dark:text-white text-center">
+          <h2 className="text-3xl font-heading font-bold mb-8 text-navy-900 dark:text-white text-center font-serif">
             Frequently Asked Questions
           </h2>
           <div className="space-y-4">
@@ -262,7 +262,7 @@ export default async function ProgrammaticPage({ params }: PageProps) {
               const faqs = [
                 {
                   q: type === "outstation" ? `What is the distance from Udaipur to ${city}?` : `How do I book ${service.name} in ${city}?`,
-                  a: type === "outstation" ? `The distance from Udaipur to ${city} varies by exact route, but our experienced drivers know the best and fastest roads. You can easily book a direct cab with Yatree Destination for a seamless journey.` : `Booking is easy! You can fill out our online form, call us directly at +91 76270 13579, or WhatsApp us to book your ${service.name} instantly.`
+                  a: type === "outstation" ? `The distance from Udaipur to ${city} varies by exact route, but our experienced drivers know the best and fastest roads. You can easily book a direct cab with GoGetGo Taxi for a seamless journey.` : `Booking is easy! You can fill out our online form, call us directly at +91 77377 37937, or WhatsApp us to book your ${service.name} instantly.`
                 },
                 {
                   q: "Are the drivers experienced and verified?",
@@ -311,3 +311,4 @@ export default async function ProgrammaticPage({ params }: PageProps) {
     </main>
   );
 }
+

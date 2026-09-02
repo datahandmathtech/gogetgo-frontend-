@@ -14,9 +14,9 @@ export default function ChatWidget() {
   const isLiveUdaipurPage = pathname?.includes('/live-udaipur');
   const isBookingPage = pathname?.includes('/booking');
 
-  let phoneDisplay = "+91 76270 13579";
-  let phoneLink = "tel:+917627013579";
-  let waLinkText = "917627013579";
+  let phoneDisplay = "+91 77377 37937";
+  let phoneLink = "tel:+917737737937";
+  let waLinkText = "917737737937";
 
   if (isMultiDayPage) {
     phoneDisplay = "+91 63674 66426";
@@ -31,9 +31,9 @@ export default function ChatWidget() {
     phoneLink = "tel:+918000505810";
     waLinkText = "918000505810";
   } else if (isBookingPage) {
-    phoneDisplay = "+91 76270 13579";
-    phoneLink = "tel:+917627013579";
-    waLinkText = "917627013579";
+    phoneDisplay = "+91 77377 37937";
+    phoneLink = "tel:+917737737937";
+    waLinkText = "917737737937";
   }
 
   return (
@@ -133,15 +133,15 @@ export default function ChatWidget() {
                 <div className="flex items-center gap-5">
                   <div className="w-16 h-16 relative bg-white rounded-[1.25rem] p-2 shadow-[0_10px_30px_rgba(0,0,0,0.3)] transform hover:rotate-3 transition-transform">
                     <Image 
-                      src="/logo.png"
-                      alt="Yatree Logo"
+                      src="/logo.webp"
+                      alt="GoGetGo Logo"
                       fill
                       sizes="64px"
                       className="object-contain p-2"
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold tracking-tight">Yatree Assistant</h3>
+                    <h3 className="text-2xl font-bold tracking-tight">GoGetGo Assistant</h3>
                     <div className="flex items-center gap-2 mt-1">
                       <div className="flex items-center gap-1.5 px-2.5 py-1 bg-green-500/20 rounded-full border border-green-500/30">
                         <span className="w-2 h-2 bg-green-500 rounded-full shadow-[0_0_10px_#22c55e]"></span>
@@ -280,3 +280,4 @@ export default function ChatWidget() {
     </>
   );
 }
+

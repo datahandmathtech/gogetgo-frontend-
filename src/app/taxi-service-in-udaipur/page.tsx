@@ -52,14 +52,14 @@ export default function TaxiServicePage() {
              </div>
 
              <span className="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs mb-6 block">Premium Mobility Partner</span>
-             <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-8 leading-[1.1]">
+             <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-8 leading-[1.1] font-serif">
                Premier Taxi Service <br/> in Udaipur.
              </h1>
              <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-10">
                Discover the Venice of the East with the most reliable and highly-rated <strong>cab service in Udaipur</strong>. From local royal sightseeing to outstation Rajasthan tours, we ensure every mile is a memory.
              </p>
              <div className="flex flex-wrap justify-center gap-4">
-                <a href="tel:+917627013579" className="bg-orange-500 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm flex items-center gap-3 hover:bg-orange-600 transition-colors">
+                <a href="tel:+917737737937" className="bg-orange-500 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm flex items-center gap-3 hover:bg-orange-600 transition-colors">
                   <Phone className="w-4 h-4" /> Book Your Ride Now
                 </a>
                 <a href="#about-service" className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white/20 transition-colors">
@@ -78,9 +78,9 @@ export default function TaxiServicePage() {
               {/* Left Column: Semantic SEO Text */}
               <div className="lg:col-span-8">
                  <div className="prose prose-lg prose-slate max-w-none">
-                    <h2 className="text-3xl font-black text-slate-900 mb-6">Why Yatree Destination is the Best Taxi Service in Udaipur</h2>
+                    <h2 className="text-3xl font-black text-slate-900 mb-6 font-serif">Why GoGetGo Taxi is the Best Taxi Service in Udaipur</h2>
                     <p className="text-slate-600 leading-relaxed">
-                      Udaipur, the "City of Lakes," is a labyrinth of royal history, narrow alleys, and breathtaking palaces. Navigating this majestic city requires more than just a car; it requires local expertise. At Yatree Destination, we have built a reputation over 15 years as the most trusted <strong>taxi service in Udaipur</strong>. Our commitment to punctuality, transparency, and luxury has made us the first choice for thousands of tourists and business travelers.
+                      Udaipur, the "City of Lakes," is a labyrinth of royal history, narrow alleys, and breathtaking palaces. Navigating this majestic city requires more than just a car; it requires local expertise. At GoGetGo Taxi, we have built a reputation over 15 years as the most trusted <strong>taxi service in Udaipur</strong>. Our commitment to punctuality, transparency, and luxury has made us the first choice for thousands of tourists and business travelers.
                     </p>
 
                     <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Udaipur Sightseeing Taxi: Explore the Royal Heritage</h3>
@@ -109,11 +109,11 @@ export default function TaxiServicePage() {
 
                     <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Transparent Pricing: No Hidden Costs</h3>
                     <p className="text-slate-600">
-                      One of the biggest concerns for travelers searching for a <strong>taxi booking in Udaipur</strong> is hidden costs. At Yatree Destination, we provide an itemized billing system. We explain the per-km rates, driver allowances, and state taxes upfront. Whether you are looking for the <strong>cheapest taxi in Udaipur</strong> for a quick drop or a luxury sedan for a wedding, our prices are competitive and honest.
+                      One of the biggest concerns for travelers searching for a <strong>taxi booking in Udaipur</strong> is hidden costs. At GoGetGo Taxi, we provide an itemized billing system. We explain the per-km rates, driver allowances, and state taxes upfront. Whether you are looking for the <strong>cheapest taxi in Udaipur</strong> for a quick drop or a luxury sedan for a wedding, our prices are competitive and honest.
                     </p>
 
                     <blockquote className="border-l-4 border-orange-500 pl-6 my-10 italic text-xl text-slate-700 font-medium leading-relaxed">
-                      "Yatree Destination was the backbone of our 5-day Rajasthan trip. From the airport pickup to our outstation journey to Mount Abu, everything was handled with corporate-level professionalism." 
+                      "GoGetGo Taxi was the backbone of our 5-day Rajasthan trip. From the airport pickup to our outstation journey to Mount Abu, everything was handled with corporate-level professionalism." 
                       <footer className="text-sm font-bold text-orange-500 mt-2">— Amit Khurana, Business Traveler</footer>
                     </blockquote>
                  </div>
@@ -149,7 +149,7 @@ export default function TaxiServicePage() {
                              </div>
                           </div>
                        </div>
-                       <a href="tel:+917627013579" className="w-full bg-orange-500 py-4 rounded-xl text-center font-bold uppercase tracking-widest text-xs mt-10 block hover:bg-orange-600 transition-colors">
+                       <a href="tel:+917737737937" className="w-full bg-orange-500 py-4 rounded-xl text-center font-bold uppercase tracking-widest text-xs mt-10 block hover:bg-orange-600 transition-colors">
                           Instant Booking
                        </a>
                     </div>
@@ -186,7 +186,7 @@ export default function TaxiServicePage() {
       {/* 4. Pricing Guidance Section (SEO Value) */}
       <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-6 text-center">
-           <h2 className="text-3xl font-black text-slate-900 mb-6">Udaipur Taxi Fare & Pricing Guide</h2>
+           <h2 className="text-3xl font-black text-slate-900 mb-6 font-serif">Udaipur Taxi Fare & Pricing Guide</h2>
            <p className="text-slate-600 max-w-3xl mx-auto mb-12 leading-relaxed">
              We believe in full transparency. While exact rates may vary based on fuel prices and seasonal demand, here is a general guide to our taxi pricing in Udaipur.
            </p>
@@ -229,10 +229,11 @@ export default function TaxiServicePage() {
       <Footer />
 
       <div className="fixed bottom-0 left-0 w-full z-[100] md:hidden flex border-t border-slate-200 bg-white">
-        <a href="tel:+917627013579" className="flex-1 bg-slate-900 text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase tracking-widest"><Phone className="w-4 h-4 text-orange-500" /> Call Now</a>
-        <a href="https://wa.me/917627013579" className="flex-1 bg-[#25D366] text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase tracking-widest"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
+        <a href="tel:+917737737937" className="flex-1 bg-slate-900 text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase tracking-widest"><Phone className="w-4 h-4 text-orange-500" /> Call Now</a>
+        <a href="https://wa.me/917737737937" className="flex-1 bg-[#25D366] text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase tracking-widest"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
       </div>
     </main>
   );
 }
+
 

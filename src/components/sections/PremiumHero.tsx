@@ -1,104 +1,88 @@
+
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
 import Image from "next/image";
-import KineticTitle from "../ui/KineticTitle";
-import { ChevronRight, Phone } from "lucide-react";
+import { ArrowRight, MapPin, Calendar, Star } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function PremiumHero() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"],
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
-
   return (
-    <section 
-      ref={containerRef}
-      className="relative min-h-[100dvh] w-full overflow-hidden bg-midnight flex items-center py-24 md:py-32"
-    >
-      {/* Background Image with Parallax */}
-      <motion.div 
-        style={{ y, scale }}
-        className="absolute inset-0 z-0"
-      >
+    <section className="relative min-h-[90vh] md:min-h-screen w-full overflow-hidden flex items-center pt-32 pb-24 md:pt-32 md:pb-24">
+      {/* Main Background Image - Provided by User */}
+      <div className="absolute inset-0 z-0">
         <Image
-          src="/premium_udaipur_taxi_hero_1778818369975.png"
+          src="/Gemini_Generated_Image_f2wk2xf2wk2xf2wk.png"
           alt="Premium Udaipur Taxi Service"
           fill
           priority
-          className="object-cover object-center brightness-[0.6] contrast-[1.1]"
+          className="object-cover object-bottom"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-midnight/40 via-transparent to-midnight" />
-      </motion.div>
-
-      {/* Content */}
-      <div className="container-custom relative z-10">
-        <motion.div
-          style={{ opacity }}
-          className="max-w-4xl"
-        >
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] mb-8 tracking-tight"
-          >
-            Experience Udaipur with <br className="hidden md:block" />
-            <span className="text-gold-premium">Unmatched Luxury</span> & Elegance
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-            className="text-lg md:text-xl text-slate-200/80 max-w-2xl mb-10 leading-relaxed font-light"
-          >
-            From airport transfers to majestic palace tours, Yatree Destination provides a curated travel experience defined by comfort, punctuality, and the spirit of Rajasthan.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-            className="flex flex-wrap gap-4"
-          >
-            <Link href="/booking/car" className="group flex items-center justify-center relative h-14 px-8 rounded-full overflow-hidden bg-gold-premium text-midnight font-bold transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(212,175,55,0.3)]">
-              <span className="relative z-10 flex items-center gap-2">
-                Book Your Ride <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </span>
-              <div className="absolute inset-0 bg-white translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300" />
-            </Link>
-            
-            <a 
-              href="tel:+917627013579"
-              className="h-14 px-8 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold flex items-center gap-2 transition-all hover:bg-white/10 hover:border-white/40 active:scale-95"
-            >
-              <Phone className="w-4 h-4 text-gold-premium" /> Contact Us
-            </a>
-          </motion.div>
-        </motion.div>
+        {/* Sleek Gradient Overlay for text contrast on the LEFT side */}
+        <div className="absolute inset-0 bg-gradient-to-r from-midnight/90 via-midnight/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-midnight/80 via-transparent to-transparent" />
       </div>
 
-      {/* Bottom Gradient Decor */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-midnight to-transparent pointer-events-none" />
-      
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-      >
-        <span className="text-[10px] text-white/40 uppercase tracking-widest font-bold">Discover</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-gold-premium to-transparent" />
-      </motion.div>
+      {/* Content - Left Aligned */}
+      <div className="container mx-auto px-6 relative z-10 w-full">
+        <div className="max-w-3xl pt-10">
+          
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-gold-premium/30 bg-midnight/60 backdrop-blur-md mb-8"
+          >
+            <span className="w-2 h-2 rounded-full bg-gold-premium animate-pulse" />
+            <span className="text-white font-bold uppercase tracking-[0.2em] text-[10px]">Your Premium Travel Partner</span>
+          </motion.div>
+
+          <motion.h1 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-5xl sm:text-6xl md:text-7xl font-serif text-white leading-[1.05] mb-6 tracking-tight"
+          >
+            Redefining <br /> 
+            <span className="text-gold-light">Luxury Travel</span>
+          </motion.h1>
+
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-lg md:text-xl text-slate-200 max-w-xl mb-12 leading-relaxed font-light drop-shadow-md"
+          >
+            Experience Udaipur and beyond with our premium fleet. We manage your complete journey with impeccable service and professional chauffeurs.
+          </motion.p>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-wrap items-center gap-6"
+          >
+            <Link 
+              href="/booking" 
+              className="flex items-center justify-center gap-3 bg-gold-premium text-white px-8 h-14 rounded-full font-bold text-sm tracking-widest uppercase transition-all hover:bg-gold-light active:scale-95 shadow-[0_0_30px_rgba(56,189,248,0.3)] hover:shadow-[0_0_50px_rgba(56,189,248,0.5)]"
+            >
+              Book Now <ArrowRight className="w-5 h-5" />
+            </Link>
+
+            <div className="flex items-center gap-4 bg-midnight/40 backdrop-blur-md border border-white/10 rounded-full pr-6 pl-2 py-2">
+                <div className="w-10 h-10 rounded-full bg-gold-premium flex items-center justify-center shrink-0">
+                    <Star className="w-5 h-5 text-white fill-white" />
+                </div>
+                <div>
+                    <div className="text-white font-bold text-xs">4.9/5 Rating</div>
+                    <div className="text-slate-300 text-[10px] uppercase tracking-wider">Trusted by 10k+</div>
+                </div>
+            </div>
+          </motion.div>
+          
+        </div>
+      </div>
     </section>
   );
 }
+

@@ -57,7 +57,7 @@ export default function Hero() {
 
           <KineticTitle 
             text="ROYAL HOSPITALITY ON WHEELS."
-            className="text-5xl md:text-8xl lg:text-[7.5rem] font-black text-white leading-[0.9] tracking-tighter mb-10 uppercase text-center justify-center"
+            className="text-5xl md:text-8xl lg:text-[7.5rem] font-black text-white leading-[0.9] tracking-tighter mb-10 uppercase text-center justify-center font-serif"
             stagger={0.08}
           />
 
@@ -77,7 +77,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-8 justify-center items-center"
           >
             <Magnetic>
-              <a href="tel:+917627013579" className="group relative bg-primary text-white px-12 py-6 rounded-full font-black text-sm uppercase tracking-[0.2em] flex items-center justify-center gap-3 overflow-hidden transition-all duration-500 hover:shadow-[0_0_40px_rgba(var(--color-primary),0.4)] hover:shadow-primary/40 active:scale-95">
+              <a href="tel:+917737737937" className="group relative bg-primary text-white px-12 py-6 rounded-full font-black text-sm uppercase tracking-[0.2em] flex items-center justify-center gap-3 overflow-hidden transition-all duration-500 hover:shadow-[0_0_40px_rgba(var(--color-primary),0.4)] hover:shadow-primary/40 active:scale-95">
                 <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
                 <span className="relative z-10 flex items-center gap-2">
                    <Phone className="w-4 h-4" /> Book Now
@@ -130,3 +130,4 @@ export default function Hero() {
     </section>
   );
 }
+

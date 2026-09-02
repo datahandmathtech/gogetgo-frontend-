@@ -32,8 +32,8 @@ export default function PremiumBookingForm() {
   const handleBooking = () => {
     const selectedTab = tabs.find(t => t.id === activeTab)?.label || activeTab;
     const emailText = email ? `%0A*Email:* ${email}` : '';
-    const message = `Hello Yatree Destination, I would like to request a booking.%0A%0A*Trip Type:* ${selectedTab}%0A*Pickup:* ${pickup || 'Not specified'}%0A*Drop:* ${drop || 'Not specified'}%0A*Date:* ${date || 'Not specified'}%0A*Vehicle:* ${vehicle}${emailText}`;
-    window.open(`https://wa.me/917627013579?text=${message}`, '_blank');
+    const message = `Hello GoGetGo Taxi, I would like to request a booking.%0A%0A*Trip Type:* ${selectedTab}%0A*Pickup:* ${pickup || 'Not specified'}%0A*Drop:* ${drop || 'Not specified'}%0A*Date:* ${date || 'Not specified'}%0A*Vehicle:* ${vehicle}${emailText}`;
+    window.open(`https://wa.me/917737737937?text=${message}`, '_blank');
   };
 
   return (
@@ -168,7 +168,7 @@ export default function PremiumBookingForm() {
 
            <button 
               onClick={handleBooking}
-              className="w-full sm:w-auto bg-midnight text-white px-12 py-6 rounded-full font-black text-xs uppercase tracking-[0.2em] shadow-2xl hover:bg-gold-premium hover:text-midnight transition-all duration-500 active:scale-95 flex items-center justify-center gap-3"
+              className="w-full sm:w-auto bg-midnight text-white px-12 py-6 rounded-full font-black text-xs uppercase tracking-[0.2em] shadow-2xl hover:bg-gold-premium hover:text-white transition-all duration-500 active:scale-95 flex items-center justify-center gap-3"
            >
               Request Booking <ChevronRight className="w-5 h-5" />
            </button>
@@ -177,10 +177,12 @@ export default function PremiumBookingForm() {
         {/* SEO Keyword Block for Book Now */}
         <div className="mt-12 pt-8 border-t border-slate-100 text-center">
           <p className="text-[11px] leading-loose text-slate-500 font-medium">
-            <strong className="text-midnight font-black">Best Taxi Service in Udaipur:</strong> We provide reliable <span className="text-gold-premium font-bold">Udaipur airport taxi</span> transfers, local sightseeing cabs, and premium <span className="text-gold-premium font-bold">outstation cabs from Udaipur</span> to destinations like <strong className="text-midnight font-bold">Mount Abu, Ranakpur, Kumbhalgarh, Nathdwara, and Chittorgarh</strong>. Book your luxury Innova Crysta or sedan with Yatree Destination today.
+            <strong className="text-midnight font-black">Best Taxi Service in Udaipur:</strong> We provide reliable <span className="text-gold-premium font-bold">Udaipur airport taxi</span> transfers, local sightseeing cabs, and premium <span className="text-gold-premium font-bold">outstation cabs from Udaipur</span> to destinations like <strong className="text-midnight font-bold">Mount Abu, Ranakpur, Kumbhalgarh, Nathdwara, and Chittorgarh</strong>. Book your luxury Innova Crysta or sedan with GoGetGo Taxi today.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
+

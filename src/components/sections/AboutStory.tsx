@@ -18,7 +18,7 @@ export default function AboutStory() {
             <div className="relative h-[600px] rounded-[3rem] overflow-hidden shadow-2xl group">
                <Image 
                  src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&q=80"
-                 alt="Yatree Destination Legacy"
+                 alt="GoGetGo Taxi Legacy"
                  fill
                  className="object-cover transition-transform duration-1000 group-hover:scale-110"
                />
@@ -27,11 +27,11 @@ export default function AboutStory() {
                {/* Stats Overlay */}
                <div className="absolute bottom-10 left-10 right-10 grid grid-cols-2 gap-4">
                   <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-6 rounded-3xl text-center">
-                     <p className="text-3xl font-black text-gold-500 mb-1">12+</p>
+                     <p className="text-3xl font-black text-gold-500 mb-1 font-serif">12+</p>
                      <p className="text-[10px] font-bold text-white uppercase tracking-widest">Years of Excellence</p>
                   </div>
                   <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-6 rounded-3xl text-center">
-                     <p className="text-3xl font-black text-gold-500 mb-1">50k+</p>
+                     <p className="text-3xl font-black text-gold-500 mb-1 font-serif">50k+</p>
                      <p className="text-[10px] font-bold text-white uppercase tracking-widest">Happy Travelers</p>
                   </div>
                </div>
@@ -45,13 +45,13 @@ export default function AboutStory() {
                Our Legacy Since 2012
             </div>
             
-            <h2 className="text-4xl md:text-6xl font-bold text-navy-900 mb-8 leading-[1.1]">
+            <h2 className="text-4xl md:text-6xl font-bold text-navy-900 mb-8 leading-[1.1] font-serif">
               Udaipur's Most <span className="text-gold-600">Established</span> Travel Partner
             </h2>
             
             <div className="prose prose-slate prose-lg max-w-none space-y-6">
               <p className="text-slate-600 leading-relaxed">
-                Founded in the heart of the City of Lakes, **Yatree Destination** began with a simple vision: to bridge the gap between traditional Rajasthani hospitality and modern professional travel standards. Over the last decade, we have evolved from a small local taxi operator into Udaipur's premier tour and car rental agency, serving thousands of international and domestic tourists every year. Our journey has been defined by a deep-rooted commitment to safety, punctuality, and the "Atithi Devo Bhava" philosophy that defines Rajasthan.
+                Founded in the heart of the City of Lakes, **GoGetGo Taxi** began with a simple vision: to bridge the gap between traditional Rajasthani hospitality and modern professional travel standards. Over the last decade, we have evolved from a small local taxi operator into Udaipur's premier tour and car rental agency, serving thousands of international and domestic tourists every year. Our journey has been defined by a deep-rooted commitment to safety, punctuality, and the "Atithi Devo Bhava" philosophy that defines Rajasthan.
               </p>
               
               <p className="text-slate-600 leading-relaxed">

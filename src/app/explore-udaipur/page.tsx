@@ -194,7 +194,7 @@ export default function ExploreUdaipurPage() {
              <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-black uppercase tracking-[0.3em] text-[10px] px-6 py-2.5 rounded-full inline-flex items-center gap-2 shadow-2xl">
                <MapPin className="w-3.5 h-3.5 text-gold-premium" /> The Venice of the East
              </span>
-             <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] uppercase drop-shadow-2xl">
+             <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] uppercase drop-shadow-2xl font-serif">
                Explore <br/>
                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-light via-gold-premium to-amber-600">Udaipur</span>
              </h1>
@@ -213,7 +213,7 @@ export default function ExploreUdaipurPage() {
               <span className="text-gold-premium font-black tracking-[0.2em] uppercase text-[10px] flex items-center gap-2 mb-3">
                 <Camera className="w-4 h-4" /> Sightseeing
               </span>
-              <h2 className="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight">Iconic Landmarks</h2>
+              <h2 className="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight font-serif">Iconic Landmarks</h2>
             </div>
             <p className="text-slate-500 max-w-sm text-sm font-medium leading-relaxed">
               Discover the absolute must-visit royal palaces, island sanctuaries, and museums that define Udaipur's majestic skyline.
@@ -240,7 +240,7 @@ export default function ExploreUdaipurPage() {
                     <span className="bg-gold-premium text-midnight text-[9px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full mb-4 inline-block shadow-lg">
                       {item.tag}
                     </span>
-                    <h3 className="text-2xl md:text-3xl font-black text-white leading-tight mb-2">{item.name}</h3>
+                    <h3 className="text-2xl md:text-3xl font-black text-white leading-tight mb-2 font-serif">{item.name}</h3>
                     <div className="h-0 opacity-0 overflow-hidden group-hover:h-auto group-hover:opacity-100 group-hover:mt-3 transition-all duration-500 ease-out">
                       <p className="text-slate-300 text-xs md:text-sm font-medium leading-relaxed line-clamp-3">
                         {item.desc}
@@ -265,7 +265,7 @@ export default function ExploreUdaipurPage() {
             <span className="text-gold-premium font-black tracking-[0.2em] uppercase text-[10px] flex items-center justify-center gap-2 mb-3">
               <Utensils className="w-4 h-4" /> Culinary Delights
             </span>
-            <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tight">Best Food & Dining</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tight font-serif">Best Food & Dining</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
@@ -296,7 +296,7 @@ export default function ExploreUdaipurPage() {
             <span className="text-gold-premium font-black tracking-[0.2em] uppercase text-[10px] flex items-center justify-center gap-2 mb-3">
               <Hotel className="w-4 h-4" /> Royal Hospitality
             </span>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight">Premium Stays</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight font-serif">Premium Stays</h2>
           </div>
 
           <div className="space-y-32">
@@ -313,7 +313,7 @@ export default function ExploreUdaipurPage() {
                 {/* Text Side */}
                 <div className="w-full lg:w-1/2 space-y-6 lg:px-8">
                   <span className="text-gold-premium font-black tracking-[0.2em] uppercase text-[10px]">{item.tag}</span>
-                  <h3 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight uppercase">{item.name}</h3>
+                  <h3 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight uppercase font-serif">{item.name}</h3>
                   <p className="text-slate-500 text-base leading-relaxed font-medium">
                     {item.desc}
                   </p>
@@ -328,7 +328,7 @@ export default function ExploreUdaipurPage() {
                   
                   <div className="pt-6">
                      <a 
-                      href="https://wa.me/917627013579"
+                      href="https://wa.me/917737737937"
                       target="_blank"
                       rel="noopener noreferrer" 
                       className="inline-flex items-center gap-2 bg-slate-950 hover:bg-gold-premium text-white hover:text-midnight font-black text-[10px] uppercase tracking-widest px-8 py-4 rounded-xl transition-all shadow-xl active:scale-95"
@@ -351,10 +351,10 @@ export default function ExploreUdaipurPage() {
               <span className="text-gold-premium font-black tracking-[0.2em] uppercase text-[10px] flex items-center gap-2 mb-3">
                 <Map className="w-4 h-4" /> Beyond Udaipur
               </span>
-              <h2 className="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight">Outstation Trips</h2>
+              <h2 className="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight font-serif">Outstation Trips</h2>
             </div>
             <a 
-              href="https://wa.me/917627013579"
+              href="https://wa.me/917737737937"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-black text-[10px] uppercase tracking-widest px-6 py-3 rounded-xl transition-all shadow-lg shadow-green-500/20"
@@ -371,9 +371,10 @@ export default function ExploreUdaipurPage() {
 
       {/* Mobile Sticky CTA footer */}
       <div className="fixed bottom-0 left-0 w-full z-[100] md:hidden flex border-t border-slate-200 bg-white">
-        <a href="tel:+917627013579" className="flex-1 bg-slate-950 text-white flex items-center justify-center gap-2 py-4.5 font-bold text-xs uppercase tracking-wider"><Phone className="w-4 h-4 text-gold-premium" /> Call Now</a>
-        <a href="https://wa.me/917627013579" className="flex-1 bg-[#25D366] text-white flex items-center justify-center gap-2 py-4.5 font-bold text-xs uppercase tracking-wider"><MessageCircle className="w-4 h-4 fill-current" /> WhatsApp</a>
+        <a href="tel:+917737737937" className="flex-1 bg-slate-950 text-white flex items-center justify-center gap-2 py-4.5 font-bold text-xs uppercase tracking-wider"><Phone className="w-4 h-4 text-gold-premium" /> Call Now</a>
+        <a href="https://wa.me/917737737937" className="flex-1 bg-[#25D366] text-white flex items-center justify-center gap-2 py-4.5 font-bold text-xs uppercase tracking-wider"><MessageCircle className="w-4 h-4 fill-current" /> WhatsApp</a>
       </div>
     </main>
   );
 }
+

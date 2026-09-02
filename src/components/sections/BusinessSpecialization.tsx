@@ -53,11 +53,11 @@ export default function BusinessSpecialization() {
              <Gem className="w-4 h-4" />
              Specialized Business & Luxury Solutions
           </div>
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-navy-900 mb-8 leading-[1.1]">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-navy-900 mb-8 leading-[1.1] font-serif">
             Expert <span className="text-gold-600">Logistics</span> for Grand Events & Corporate Success
           </h2>
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
-            Beyond standard taxi services, Yatree Destination specializes in complex transportation management 
+            Beyond standard taxi services, GoGetGo Taxi specializes in complex transportation management 
             for destination weddings, corporate conferences (MICE), and luxury events. Our dedicated 
             'Event Management Wing' works closely with wedding planners and corporate travel managers 
             to ensure that every guest experience is seamless, safe, and royal.

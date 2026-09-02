@@ -10,7 +10,7 @@ export default function CorporateTravel() {
           <div className="order-2 lg:order-1 space-y-8">
             <div>
               <span className="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs">Executive Logistics</span>
-              <h2 className="text-4xl md:text-5xl font-black text-slate-900 mt-2 mb-6 tracking-tight">
+              <h2 className="text-4xl md:text-5xl font-black text-slate-900 mt-2 mb-6 tracking-tight font-serif">
                 Premium Corporate Travel in Udaipur.
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed">

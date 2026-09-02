@@ -39,17 +39,17 @@ export default function RajasthanTourPage() {
         <div className="container mx-auto px-6 relative z-10 text-center">
            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
              <span className="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs mb-6 block">Discover the Royal Land</span>
-             <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-8 leading-[1.1]">
+             <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-8 leading-[1.1] font-serif">
                Rajasthan Tour <br/> Packages.
              </h1>
              <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-10">
                Experience the majesty of Rajasthan with our curated <strong>tour packages from Udaipur</strong>. From golden deserts to blue cities, explore the best of the royal land in comfort.
              </p>
              <div className="flex flex-wrap justify-center gap-4">
-                <a href="tel:+917627013579" className="bg-orange-500 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm flex items-center gap-3 hover:bg-orange-600 transition-colors shadow-lg">
+                <a href="tel:+917737737937" className="bg-orange-500 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm flex items-center gap-3 hover:bg-orange-600 transition-colors shadow-lg">
                   <Compass className="w-4 h-4" /> Start Your Journey
                 </a>
-                <a href="https://wa.me/917627013579" className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white/20 transition-colors flex items-center gap-2">
+                <a href="https://wa.me/917737737937" className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white/20 transition-colors flex items-center gap-2">
                   <Calendar className="w-4 h-4" /> Plan My Itinerary
                 </a>
              </div>
@@ -64,7 +64,7 @@ export default function RajasthanTourPage() {
               
               <div className="lg:col-span-8">
                  <div className="prose prose-lg prose-slate max-w-none text-slate-600">
-                    <h2 className="text-3xl font-black text-slate-900 mb-6">Expert Rajasthan Sightseeing & Taxi Tour Operator</h2>
+                    <h2 className="text-3xl font-black text-slate-900 mb-6 font-serif">Expert Rajasthan Sightseeing & Taxi Tour Operator</h2>
                     <p className="leading-relaxed mb-6">
                       Rajasthan is not just a state; it's a living museum of Indian history. While Udaipur is the heart of our operations, we specialize in <strong>Rajasthan tour packages</strong> that connect the most iconic cities of the desert land. Our <strong>Udaipur sightseeing tour</strong> serves as the perfect starting point for your journey through the royal forts, serene lakes, and vibrant bazaars of Rajasthan.
                     </p>
@@ -126,7 +126,7 @@ export default function RajasthanTourPage() {
                           </div>
                        </div>
                        <p className="text-[10px] text-slate-500 mt-6 italic">*One-way fares. GST & Tolls extra.</p>
-                       <a href="tel:+917627013579" className="w-full bg-orange-500 py-4 rounded-xl text-center font-bold uppercase tracking-widest text-xs mt-8 block hover:bg-orange-600 transition-colors">
+                       <a href="tel:+917737737937" className="w-full bg-orange-500 py-4 rounded-xl text-center font-bold uppercase tracking-widest text-xs mt-8 block hover:bg-orange-600 transition-colors">
                           Instant Booking
                        </a>
                     </div>
@@ -156,7 +156,7 @@ export default function RajasthanTourPage() {
       {/* 4. Tour FAQ Section (SEO Value) */}
       <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-6 max-w-4xl">
-           <h2 className="text-3xl font-black text-slate-900 mb-12 text-center text-slate-900">Rajasthan Tours: Questions & Answers</h2>
+           <h2 className="text-3xl font-black text-slate-900 mb-12 text-center text-slate-900 font-serif">Rajasthan Tours: Questions & Answers</h2>
            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
               {[
                 { q: "What is the best time to visit Rajasthan?", a: "The best time is from October to March when the weather is pleasant for sightseeing and desert activities." },
@@ -176,9 +176,10 @@ export default function RajasthanTourPage() {
       <Footer />
 
       <div className="fixed bottom-0 left-0 w-full z-[100] md:hidden flex border-t border-slate-200 bg-white">
-        <a href="tel:+917627013579" className="flex-1 bg-slate-900 text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase tracking-widest"><Phone className="w-4 h-4 text-orange-500" /> Call Now</a>
-        <a href="https://wa.me/917627013579" className="flex-1 bg-[#25D366] text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase tracking-widest"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
+        <a href="tel:+917737737937" className="flex-1 bg-slate-900 text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase tracking-widest"><Phone className="w-4 h-4 text-orange-500" /> Call Now</a>
+        <a href="https://wa.me/917737737937" className="flex-1 bg-[#25D366] text-white flex items-center justify-center gap-2 py-4 font-bold text-sm uppercase tracking-widest"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
       </div>
     </main>
   );
 }
+
