@@ -3,6 +3,7 @@
 import { useState, useEffect, Suspense } from "react";
 import { useParams, useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Testimonials from "@/components/sections/Testimonials";
@@ -1270,22 +1271,45 @@ export default function BookingPage() {
     <main className="relative min-h-screen bg-slate-50 selection:bg-gold-premium selection:text-midnight pt-24">
       <Navbar />
 
-      {/* Premium Visual Banner */}
-      <div className="hidden md:block bg-slate-950 py-24 px-6 text-center relative overflow-hidden">
-        {/* Glow */}
-        <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[600px] h-[300px] bg-gold-premium/15 rounded-full blur-[100px]" />
-          <div className="absolute bottom-0 right-0 w-full max-w-[300px] h-[300px] bg-gold-premium/10 rounded-full blur-[80px]" />
+      {/* Premium Visual Banner with Picture Background */}
+      <div className="relative py-20 md:py-28 px-6 text-center overflow-hidden flex items-center justify-center min-h-[360px] md:min-h-[420px] bg-slate-950">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/booking_banner_bg.jpg"
+            alt="Best Taxi Service in Udaipur"
+            fill
+            priority
+            className="object-cover object-[center_60%] scale-105"
+          />
+          {/* Multi-layered cinematic gradient overlays for high contrast and readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-950/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/40 to-slate-950/85" />
+          <div className="absolute inset-0 bg-midnight/30 backdrop-blur-[1px]" />
+        </div>
+
+        {/* Ambient Glows */}
+        <div className="absolute inset-0 opacity-25 pointer-events-none z-[1]">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[700px] h-[300px] bg-gold-premium/20 rounded-full blur-[120px]" />
         </div>
         
-        <span className="text-gold-premium font-black uppercase tracking-[0.3em] text-[10px] mb-4 block flex items-center justify-center gap-2">
-          <Sparkle className="w-4 h-4 text-gold-premium animate-pulse" />
-          Explore Udaipur US
-        </span>
-        <h1 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase mb-4 leading-none">Best Taxi Service in udaipur</h1>
-        <p className="text-slate-400 max-w-xl mx-auto text-xs md:text-sm leading-relaxed font-medium">
-          Official, fully transparent fixed pricing sheets. Select your desired sightseeing parameters or transfer routes to estimate exact prices and reserve instantly.
-        </p>
+        {/* Content Container */}
+        <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-gold-premium/30 bg-midnight/70 backdrop-blur-md mb-6 shadow-xl shadow-black/40">
+            <Sparkle className="w-3.5 h-3.5 text-gold-premium animate-pulse" />
+            <span className="text-gold-light font-bold uppercase tracking-[0.25em] text-[11px]">
+              Explore Udaipur US
+            </span>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-black text-white tracking-tight uppercase mb-5 leading-[1.08] drop-shadow-[0_4px_24px_rgba(0,0,0,0.9)]">
+            Best Taxi Service in Udaipur
+          </h1>
+
+          <p className="text-slate-200 max-w-2xl mx-auto text-xs sm:text-sm md:text-base leading-relaxed font-medium drop-shadow-md">
+            Official, fully transparent fixed pricing sheets. Select your desired sightseeing parameters or transfer routes to estimate exact prices and reserve instantly.
+          </p>
+        </div>
       </div>
 
       {/* Booking Calculator Engine */}
